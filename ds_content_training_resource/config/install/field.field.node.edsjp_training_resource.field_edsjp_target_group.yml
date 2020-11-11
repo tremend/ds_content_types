@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edsjp_target_group
+    - node.type.edsjp_training_resource
+id: node.edsjp_training_resource.field_edsjp_target_group
+field_name: field_edsjp_target_group
+entity_type: node
+bundle: edsjp_training_resource
+label: 'Target Group'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

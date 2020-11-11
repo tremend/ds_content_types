@@ -1,0 +1,10 @@
+{
+    "name": "tremend/ds_content_types",
+    "type": "drupal-module",
+    "description": "This project provides the EDSJP content types.",
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "require": {
+        "openeuropa/oe_media": "^1.9"
+    }
+}

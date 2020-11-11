@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.edsjp_article.body
+    - field.field.node.edsjp_article.comment_forum
+    - field.field.node.edsjp_article.field_edsjp_image
+    - field.field.node.edsjp_article.field_edsjp_topics
+    - node.type.edsjp_article
+  module:
+    - text
+    - user
+id: node.edsjp_article.teaser
+targetEntityType: node
+bundle: edsjp_article
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_forum: true
+  field_edsjp_image: true
+  field_edsjp_topics: true

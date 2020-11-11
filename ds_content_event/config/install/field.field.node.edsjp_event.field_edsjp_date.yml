@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edsjp_date
+    - node.type.edsjp_event
+  module:
+    - datetime_range
+id: node.edsjp_event.field_edsjp_date
+field_name: field_edsjp_date
+entity_type: node
+bundle: edsjp_event
+label: Date
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

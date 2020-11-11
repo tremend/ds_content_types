@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.edsjp_training_resource.body
+    - field.field.node.edsjp_training_resource.field_edsjp_document
+    - field.field.node.edsjp_training_resource.field_edsjp_geographical_scope
+    - field.field.node.edsjp_training_resource.field_edsjp_image
+    - field.field.node.edsjp_training_resource.field_edsjp_language
+    - field.field.node.edsjp_training_resource.field_edsjp_level
+    - field.field.node.edsjp_training_resource.field_edsjp_methodology
+    - field.field.node.edsjp_training_resource.field_edsjp_provider
+    - field.field.node.edsjp_training_resource.field_edsjp_related_link
+    - field.field.node.edsjp_training_resource.field_edsjp_summary
+    - field.field.node.edsjp_training_resource.field_edsjp_target_group
+    - field.field.node.edsjp_training_resource.field_edsjp_topics
+    - field.field.node.edsjp_training_resource.field_edsjp_topology
+    - node.type.edsjp_training_resource
+  module:
+    - text
+    - user
+id: node.edsjp_training_resource.teaser
+targetEntityType: node
+bundle: edsjp_training_resource
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_edsjp_document: true
+  field_edsjp_geographical_scope: true
+  field_edsjp_image: true
+  field_edsjp_language: true
+  field_edsjp_level: true
+  field_edsjp_methodology: true
+  field_edsjp_provider: true
+  field_edsjp_related_link: true
+  field_edsjp_summary: true
+  field_edsjp_target_group: true
+  field_edsjp_topics: true
+  field_edsjp_topology: true

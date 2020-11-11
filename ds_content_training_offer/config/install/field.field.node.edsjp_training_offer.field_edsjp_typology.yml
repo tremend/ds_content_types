@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edsjp_typology
+    - node.type.edsjp_training_offer
+id: node.edsjp_training_offer.field_edsjp_typology
+field_name: field_edsjp_typology
+entity_type: node
+bundle: edsjp_training_offer
+label: Typology
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

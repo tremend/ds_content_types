@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edsjp_length_of_training
+    - node.type.edsjp_training_offer
+id: node.edsjp_training_offer.field_edsjp_length_of_training
+field_name: field_edsjp_length_of_training
+entity_type: node
+bundle: edsjp_training_offer
+label: 'Length of Training'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
