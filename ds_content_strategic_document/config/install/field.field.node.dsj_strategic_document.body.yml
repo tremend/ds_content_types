@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.dsj_strategic_document
+  module:
+    - text
+id: node.dsj_strategic_document.body
+field_name: body
+entity_type: node
+bundle: dsj_strategic_document
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

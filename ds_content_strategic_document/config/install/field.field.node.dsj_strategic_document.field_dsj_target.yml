@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsj_target
+    - node.type.dsj_strategic_document
+    - taxonomy.vocabulary.targets
+id: node.dsj_strategic_document.field_dsj_target
+field_name: field_dsj_target
+entity_type: node
+bundle: dsj_strategic_document
+label: Target
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      targets: targets
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

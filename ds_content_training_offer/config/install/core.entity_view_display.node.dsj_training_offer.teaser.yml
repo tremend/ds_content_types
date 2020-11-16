@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dsj_training_offer.body
+    - field.field.node.dsj_training_offer.field_dsj_cost_of_training
+    - field.field.node.dsj_training_offer.field_dsj_geographical_scope
+    - field.field.node.dsj_training_offer.field_dsj_image
+    - field.field.node.dsj_training_offer.field_dsj_language
+    - field.field.node.dsj_training_offer.field_dsj_length_of_training
+    - field.field.node.dsj_training_offer.field_dsj_level
+    - field.field.node.dsj_training_offer.field_dsj_related_link
+    - field.field.node.dsj_training_offer.field_dsj_summary
+    - field.field.node.dsj_training_offer.field_dsj_target_group
+    - field.field.node.dsj_training_offer.field_dsj_topics
+    - field.field.node.dsj_training_offer.field_dsj_training_provider
+    - field.field.node.dsj_training_offer.field_dsj_training_setting
+    - field.field.node.dsj_training_offer.field_dsj_type_of_training
+    - field.field.node.dsj_training_offer.field_dsj_typology
+    - node.type.dsj_training_offer
+  module:
+    - text
+    - user
+id: node.dsj_training_offer.teaser
+targetEntityType: node
+bundle: dsj_training_offer
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_dsj_cost_of_training: true
+  field_dsj_geographical_scope: true
+  field_dsj_image: true
+  field_dsj_language: true
+  field_dsj_length_of_training: true
+  field_dsj_level: true
+  field_dsj_related_link: true
+  field_dsj_summary: true
+  field_dsj_target_group: true
+  field_dsj_topics: true
+  field_dsj_training_provider: true
+  field_dsj_training_setting: true
+  field_dsj_type_of_training: true
+  field_dsj_typology: true

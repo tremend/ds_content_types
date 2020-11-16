@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dsj_good_practice.body
+    - field.field.node.dsj_good_practice.field_dsj_date
+    - field.field.node.dsj_good_practice.field_dsj_geographical_scope
+    - field.field.node.dsj_good_practice.field_dsj_image
+    - field.field.node.dsj_good_practice.field_dsj_organisation
+    - field.field.node.dsj_good_practice.field_dsj_related_link
+    - field.field.node.dsj_good_practice.field_dsj_summary
+    - field.field.node.dsj_good_practice.field_dsj_target_group
+    - field.field.node.dsj_good_practice.field_dsj_teaser
+    - field.field.node.dsj_good_practice.field_dsj_topics
+    - field.field.node.dsj_good_practice.field_dsj_type_of_funding
+    - field.field.node.dsj_good_practice.field_dsj_type_of_initiative
+    - node.type.dsj_good_practice
+  module:
+    - text
+    - user
+id: node.dsj_good_practice.teaser
+targetEntityType: node
+bundle: dsj_good_practice
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_dsj_date: true
+  field_dsj_geographical_scope: true
+  field_dsj_image: true
+  field_dsj_organisation: true
+  field_dsj_related_link: true
+  field_dsj_summary: true
+  field_dsj_target_group: true
+  field_dsj_teaser: true
+  field_dsj_topics: true
+  field_dsj_type_of_funding: true
+  field_dsj_type_of_initiative: true

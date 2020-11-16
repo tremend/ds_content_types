@@ -1,0 +1,106 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dsj_strategic_document.body
+    - field.field.node.dsj_strategic_document.field_dsj_document
+    - field.field.node.dsj_strategic_document.field_dsj_funding
+    - field.field.node.dsj_strategic_document.field_dsj_language
+    - field.field.node.dsj_strategic_document.field_dsj_managing_authority
+    - field.field.node.dsj_strategic_document.field_dsj_reporting
+    - field.field.node.dsj_strategic_document.field_dsj_roadmap
+    - field.field.node.dsj_strategic_document.field_dsj_stakeholders_involve
+    - field.field.node.dsj_strategic_document.field_dsj_summary
+    - field.field.node.dsj_strategic_document.field_dsj_target
+    - node.type.dsj_strategic_document
+  module:
+    - text
+    - user
+id: node.dsj_strategic_document.default
+targetEntityType: node
+bundle: dsj_strategic_document
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_dsj_document:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_dsj_funding:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dsj_language:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_dsj_managing_authority:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dsj_reporting:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dsj_roadmap:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_dsj_stakeholders_involve:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dsj_summary:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_dsj_target:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

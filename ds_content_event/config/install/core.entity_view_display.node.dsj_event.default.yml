@@ -1,0 +1,100 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_forum.default
+    - field.field.node.dsj_event.body
+    - field.field.node.dsj_event.comment_forum
+    - field.field.node.dsj_event.field_dsj_date
+    - field.field.node.dsj_event.field_dsj_image
+    - field.field.node.dsj_event.field_dsj_related_link
+    - field.field.node.dsj_event.field_dsj_summary
+    - field.field.node.dsj_event.field_dsj_target_group
+    - field.field.node.dsj_event.field_dsj_topics
+    - node.type.dsj_event
+  module:
+    - comment
+    - datetime_range
+    - link
+    - text
+    - user
+id: node.dsj_event.default
+targetEntityType: node
+bundle: dsj_event
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_forum:
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_dsj_date:
+    weight: 103
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_dsj_image:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_dsj_related_link:
+    weight: 105
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_dsj_summary:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_dsj_target_group:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dsj_topics:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

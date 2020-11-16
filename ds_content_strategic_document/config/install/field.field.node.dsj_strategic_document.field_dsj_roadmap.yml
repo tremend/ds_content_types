@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsj_roadmap
+    - node.type.dsj_strategic_document
+id: node.dsj_strategic_document.field_dsj_roadmap
+field_name: field_dsj_roadmap
+entity_type: node
+bundle: dsj_strategic_document
+label: Roadmap
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dsj_strategic_document.body
+    - field.field.node.dsj_strategic_document.field_dsj_document
+    - field.field.node.dsj_strategic_document.field_dsj_funding
+    - field.field.node.dsj_strategic_document.field_dsj_language
+    - field.field.node.dsj_strategic_document.field_dsj_managing_authority
+    - field.field.node.dsj_strategic_document.field_dsj_reporting
+    - field.field.node.dsj_strategic_document.field_dsj_roadmap
+    - field.field.node.dsj_strategic_document.field_dsj_stakeholders_involve
+    - field.field.node.dsj_strategic_document.field_dsj_summary
+    - field.field.node.dsj_strategic_document.field_dsj_target
+    - node.type.dsj_strategic_document
+  module:
+    - text
+    - user
+id: node.dsj_strategic_document.teaser
+targetEntityType: node
+bundle: dsj_strategic_document
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_dsj_document: true
+  field_dsj_funding: true
+  field_dsj_language: true
+  field_dsj_managing_authority: true
+  field_dsj_reporting: true
+  field_dsj_roadmap: true
+  field_dsj_stakeholders_involve: true
+  field_dsj_summary: true
+  field_dsj_target: true

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsj_language
+    - node.type.dsj_training_resource
+    - taxonomy.vocabulary.languages
+id: node.dsj_training_resource.field_dsj_language
+field_name: field_dsj_language
+entity_type: node
+bundle: dsj_training_resource
+label: Language
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      languages: languages
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
