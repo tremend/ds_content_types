@@ -1,6 +1,6 @@
-name: edsjp_content_post
+name: edsjp_content_skills_intelligence_publication
 type: module
-description: Custom module containing the Post content type.
+description: Custom module containing the Skills Intelligence Publication content type.
 package: Custom
 core: 8.x
 php: 7.3
