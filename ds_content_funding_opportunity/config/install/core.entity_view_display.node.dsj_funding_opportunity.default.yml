@@ -1,9 +1,11 @@
+uuid: 1cd70be1-c151-424d-8974-83a17d6f6c63
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_display.comment.dsj_comment.default
     - field.field.node.dsj_funding_opportunity.body
+    - field.field.node.dsj_funding_opportunity.field_dsj_author
     - field.field.node.dsj_funding_opportunity.field_dsj_beneficiaries
     - field.field.node.dsj_funding_opportunity.field_dsj_comments
     - field.field.node.dsj_funding_opportunity.field_dsj_digital_skill_level
@@ -47,6 +49,7 @@ third_party_settings:
         - field_dsj_type_of_loan
         - field_dsj_type_of_initiative
         - field_dsj_industry
+        - field_dsj_author
       parent_name: ''
       weight: 4
       format_type: html_element
@@ -74,6 +77,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_dsj_author:
+    weight: 16
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_dsj_beneficiaries:
     weight: 4
     label: inline
@@ -92,7 +103,7 @@ content:
     type: comment_default
     region: content
   field_dsj_digital_skill_level:
-    weight: 13
+    weight: 12
     label: inline
     settings: {  }
     third_party_settings: {  }
@@ -107,7 +118,7 @@ content:
     type: string
     region: content
   field_dsj_financing_intermediary:
-    weight: 10
+    weight: 9
     label: inline
     settings:
       link_to_entity: false
@@ -139,21 +150,21 @@ content:
     type: responsive_image
     region: content
   field_dsj_industry:
-    weight: 17
+    weight: 15
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_target_audience:
-    weight: 12
+    weight: 11
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_target_group:
-    weight: 11
+    weight: 10
     label: inline
     settings:
       link: true
@@ -161,14 +172,14 @@ content:
     type: skos_concept_entity_reference_label
     region: content
   field_dsj_type_of_initiative:
-    weight: 15
+    weight: 14
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_type_of_loan:
-    weight: 14
+    weight: 13
     label: inline
     settings: {  }
     third_party_settings: {  }

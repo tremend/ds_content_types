@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.dsj_funding_opportunity.body
+    - field.field.node.dsj_funding_opportunity.field_dsj_author
     - field.field.node.dsj_funding_opportunity.field_dsj_beneficiaries
     - field.field.node.dsj_funding_opportunity.field_dsj_comments
     - field.field.node.dsj_funding_opportunity.field_dsj_digital_skill_level
@@ -49,7 +50,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_dsj_beneficiaries:
+  field_dsj_author:
     weight: 10
     settings:
       size: 60
@@ -57,25 +58,7 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_dsj_comments:
-    weight: 17
-    settings: {  }
-    third_party_settings: {  }
-    type: comment_default
-    region: content
-  field_dsj_digital_skill_level:
-    weight: 23
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_dsj_digital_technology:
-    weight: 18
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_dsj_financing_conditions:
+  field_dsj_beneficiaries:
     weight: 11
     settings:
       size: 60
@@ -83,8 +66,34 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_dsj_financing_intermediary:
+  field_dsj_comments:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_dsj_digital_skill_level:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_dsj_digital_technology:
     weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_dsj_financing_conditions:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_dsj_financing_intermediary:
+    weight: 20
     settings:
       size: 60
       placeholder: ''
@@ -92,13 +101,13 @@ content:
     type: string_textfield
     region: content
   field_dsj_form_of_funding:
-    weight: 13
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_geographic_scope:
-    weight: 15
+    weight: 16
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -116,19 +125,19 @@ content:
     type: image_image
     region: content
   field_dsj_industry:
-    weight: 21
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_dsj_target_audience:
     weight: 22
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
+  field_dsj_target_audience:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_dsj_target_group:
-    weight: 20
+    weight: 21
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -138,19 +147,19 @@ content:
     type: skos_concept_entity_reference_autocomplete
     region: content
   field_dsj_type_of_initiative:
-    weight: 25
+    weight: 26
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_type_of_loan:
-    weight: 24
+    weight: 25
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_website_link:
-    weight: 16
+    weight: 17
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -200,7 +209,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 12
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }

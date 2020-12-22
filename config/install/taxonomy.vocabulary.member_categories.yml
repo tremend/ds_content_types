@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: 'Member Categories'
-vid: member_categories
-description: ''
-weight: 0
