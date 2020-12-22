@@ -8,3 +8,5 @@ core_version_requirement: ^8 || ^9
 
 dependencies:
   - 'drupal:ds_content_types'
+  - 'drupal:ds_content_organization'
+  - 'drupal:oe_media_avportal'

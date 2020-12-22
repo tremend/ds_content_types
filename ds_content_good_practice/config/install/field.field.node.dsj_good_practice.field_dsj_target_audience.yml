@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_dsj_type_of_funding
+    - field.storage.node.field_dsj_target_audience
     - node.type.dsj_good_practice
   module:
     - options
-id: node.dsj_good_practice.field_dsj_type_of_funding
-field_name: field_dsj_type_of_funding
+id: node.dsj_good_practice.field_dsj_target_audience
+field_name: field_dsj_target_audience
 entity_type: node
 bundle: dsj_good_practice
-label: 'Type of funding'
+label: 'Target Audience'
 description: ''
 required: true
 translatable: true
