@@ -2,15 +2,20 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.dsj_comment.default
     - field.field.node.dsj_page.body
+    - field.field.node.dsj_page.field_dsj_author
+    - field.field.node.dsj_page.field_dsj_comments
     - field.field.node.dsj_page.field_dsj_image
-    - field.field.node.dsj_page.field_dsj_page_category
-    - field.field.node.dsj_page.field_dsj_related_link
+    - field.field.node.dsj_page.field_dsj_publish_in_core
+    - field.field.node.dsj_page.field_dsj_website_link
     - node.type.dsj_page
+    - responsive_image.styles.oe_theme_main_content
   module:
-    - link
-    - options
+    - comment
+    - responsive_image
     - text
+    - typed_link
     - user
 id: node.dsj_page.default
 targetEntityType: node
@@ -20,28 +25,39 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 3
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_dsj_author:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dsj_comments:
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
     region: content
   field_dsj_image:
-    weight: 103
-    label: above
+    weight: 4
+    label: hidden
     settings:
-      link: true
+      responsive_image_style: oe_theme_main_content
+      image_link: ''
     third_party_settings: {  }
-    type: entity_reference_label
+    type: responsive_image
     region: content
-  field_dsj_page_category:
-    weight: 102
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_dsj_related_link:
-    weight: 104
-    label: above
+  field_dsj_website_link:
+    weight: 5
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -49,11 +65,15 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    type: typed_link
     region: content
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  field_dsj_publish_in_core: true
+  langcode: true
+  private_message_link: true
+  search_api_excerpt: true
