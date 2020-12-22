@@ -3,17 +3,16 @@ status: true
 dependencies:
   module:
     - node
+    - rdf_skos
 id: node.field_dsj_target_group
 field_name: field_dsj_target_group
 entity_type: node
-type: string
+type: skos_concept_entity_reference
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  target_type: skos_concept
+module: rdf_skos
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -3,14 +3,13 @@ status: true
 dependencies:
   module:
     - node
-    - rdf_skos
-id: node.field_dsj_training_setting
-field_name: field_dsj_training_setting
+id: node.field_dsj_organization
+field_name: field_dsj_organization
 entity_type: node
-type: skos_concept_entity_reference
+type: entity_reference
 settings:
-  target_type: skos_concept
-module: rdf_skos
+  target_type: node
+module: core
 locked: false
 cardinality: -1
 translatable: true

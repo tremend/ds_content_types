@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   module:
+    - media
     - node
-    - rdf_skos
-id: node.field_dsj_training_setting
-field_name: field_dsj_training_setting
+id: node.field_dsj_audio_visual
+field_name: field_dsj_audio_visual
 entity_type: node
-type: skos_concept_entity_reference
+type: entity_reference
 settings:
-  target_type: skos_concept
-module: rdf_skos
+  target_type: media
+module: core
 locked: false
 cardinality: -1
 translatable: true

@@ -4,28 +4,28 @@ dependencies:
   module:
     - node
     - options
-id: node.field_dsj_type_of_funding
-field_name: field_dsj_type_of_funding
+id: node.field_dsj_digital_skill_level
+field_name: field_dsj_digital_skill_level
 entity_type: node
 type: list_string
 settings:
   allowed_values:
     -
-      value: public
-      label: Public
+      value: basic
+      label: Basic
     -
-      value: private
-      label: Private
+      value: intermediate
+      label: Intermediate
     -
-      value: crowdfunding
-      label: Crowdfunding
+      value: advanced
+      label: Advanced
     -
-      value: public_private
-      label: Public-Private
+      value: digital_expert
+      label: 'Digital Expert'
   allowed_values_function: ''
 module: options
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

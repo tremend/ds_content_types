@@ -1,0 +1,11 @@
+name: edsjp_content_strategic_document
+type: module
+description: Custom module containing the Strategic Document content type.
+package: Custom
+core: 8.x
+php: 7.3
+core_version_requirement: ^8 || ^9
+
+dependencies:
+  - 'drupal:ds_content_types'
+  - 'drupal:ds_content_member'

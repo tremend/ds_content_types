@@ -4,8 +4,8 @@ dependencies:
   module:
     - node
     - rdf_skos
-id: node.field_dsj_training_setting
-field_name: field_dsj_training_setting
+id: node.field_dsj_target_language
+field_name: field_dsj_target_language
 entity_type: node
 type: skos_concept_entity_reference
 settings:

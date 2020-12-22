@@ -3,13 +3,13 @@ status: true
 dependencies:
   module:
     - node
-id: node.field_dsj_methodology
-field_name: field_dsj_methodology
+    - text
+id: node.field_dsj_timeline_roadmap
+field_name: field_dsj_timeline_roadmap
 entity_type: node
-type: string_long
-settings:
-  case_sensitive: false
-module: core
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

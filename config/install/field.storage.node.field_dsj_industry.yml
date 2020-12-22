@@ -1,0 +1,671 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_dsj_industry
+field_name: field_dsj_industry
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'http://data.europa.eu/snb/isced-f/00'
+      label: 'Generic programmes and qualifications'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/000'
+      label: 'Generic programmes and qualifications not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0000'
+      label: 'Generic programmes and qualifications not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/001'
+      label: 'Basic programmes and qualifications'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0011'
+      label: 'Basic programmes and qualifications'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/002'
+      label: 'Literacy and numeracy'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0021'
+      label: 'Literacy and numeracy'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/003'
+      label: 'Personal skills and development'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0031'
+      label: 'Personal skills and development'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/009'
+      label: 'Generic programmes and qualifications not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0099'
+      label: 'Generic programmes and qualifications not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/01'
+      label: Education
+    -
+      value: 'http://data.europa.eu/snb/isced-f/011'
+      label: Education
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0110'
+      label: 'Education not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0111'
+      label: 'Education science'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0112'
+      label: 'Training for pre-school teachers'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0113'
+      label: 'Teacher training without subject specialisation'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0114'
+      label: 'Teacher training with subject specialisation'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0119'
+      label: 'Education not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/018'
+      label: 'Inter-disciplinary programmes and qualifications involving education'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0188'
+      label: 'Inter-disciplinary programmes and qualifications involving education'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/02'
+      label: 'Arts and humanities'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/020'
+      label: 'Arts and humanities not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0200'
+      label: 'Arts and humanities not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/021'
+      label: Arts
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0210'
+      label: 'Arts not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0211'
+      label: 'Audio-visual techniques and media production'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0212'
+      label: 'Fashion, interior and industrial design'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0213'
+      label: 'Fine arts'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0214'
+      label: Handicrafts
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0215'
+      label: 'Music and performing arts'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0219'
+      label: 'Arts not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/022'
+      label: 'Humanities (except languages)'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0220'
+      label: 'Humanities (except languages) not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0221'
+      label: 'Religion and theology'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0222'
+      label: 'History and archaeology'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0223'
+      label: 'Philosophy and ethics'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0228'
+      label: 'Inter-disciplinary programmes and qualifications involving humanities'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0229'
+      label: 'Humanities (except languages) not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/023'
+      label: Languages
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0230'
+      label: 'Languages not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0231'
+      label: 'Language acquisition'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0232'
+      label: 'Literature and linguistics'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0239'
+      label: 'Languages not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/028'
+      label: 'Inter-disciplinary programmes and qualifications involving arts and humanities'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0288'
+      label: 'Inter-disciplinary programmes and qualifications involving arts and humanities'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/029'
+      label: 'Arts and humanities not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0299'
+      label: 'Arts and humanities not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/03'
+      label: 'Social sciences, journalism and information'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/030'
+      label: 'Social sciences, journalism and information not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0300'
+      label: 'Social sciences, journalism and information not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/031'
+      label: 'Social and behavioural sciences'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0310'
+      label: 'Social and behavioural sciences not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0311'
+      label: Economics
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0312'
+      label: 'Political sciences and civics'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0313'
+      label: Psychology
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0314'
+      label: 'Sociology and cultural studies'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0319'
+      label: 'Social and behavioural sciences not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/032'
+      label: 'Journalism and information'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0320'
+      label: 'Journalism and information not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0321'
+      label: 'Journalism and reporting'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0322'
+      label: 'Library, information and archival studies'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0329'
+      label: 'Journalism and information not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/038'
+      label: 'Inter-disciplinary programmes and qualifications involving social sciences, journalism and information'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0388'
+      label: 'Inter-disciplinary programmes and qualifications involving social sciences, journalism and information'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/039'
+      label: 'Social sciences, journalism and information not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0399'
+      label: 'Social sciences, journalism and information not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/04'
+      label: 'Business, administration and law'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/040'
+      label: 'Business, administration and law not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0400'
+      label: 'Business, administration and law not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/041'
+      label: 'Business and administration'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0410'
+      label: 'Business and administration not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0411'
+      label: 'Accounting and taxation'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0412'
+      label: 'Finance, banking and insurance'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0413'
+      label: 'Management and administration'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0414'
+      label: 'Marketing and advertising'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0415'
+      label: 'Secretarial and office work'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0416'
+      label: 'Wholesale and retail sales'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0417'
+      label: 'Work skills'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0419'
+      label: 'Business and administration not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/042'
+      label: Law
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0421'
+      label: Law
+    -
+      value: 'http://data.europa.eu/snb/isced-f/048'
+      label: 'Inter-disciplinary programmes and qualifications involving business, administration and law'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0488'
+      label: 'Inter-disciplinary programmes and qualifications involving business, administration and law'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/049'
+      label: 'Business, administration and law not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0499'
+      label: 'Business, administration and law not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/05'
+      label: 'Natural sciences, mathematics and statistics'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/050'
+      label: 'Natural sciences, mathematics and statistics not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0500'
+      label: 'Natural sciences, mathematics and statistics not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/051'
+      label: 'Biological and related sciences'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0510'
+      label: 'Biological and related sciences not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0511'
+      label: Biology
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0512'
+      label: Biochemistry
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0519'
+      label: 'Biological and related sciences not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/052'
+      label: Environment
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0520'
+      label: 'Environment not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0521'
+      label: 'Environmental sciences'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0522'
+      label: 'Natural environments and wildlife'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0529'
+      label: 'Environment not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/053'
+      label: 'Physical sciences'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0530'
+      label: 'Physical sciences not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0531'
+      label: Chemistry
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0532'
+      label: 'Earth sciences'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0533'
+      label: Physics
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0539'
+      label: 'Physical sciences not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/054'
+      label: 'Mathematics and statistics'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0540'
+      label: 'Mathematics and statistics not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0541'
+      label: Mathematics
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0542'
+      label: Statistics
+    -
+      value: 'http://data.europa.eu/snb/isced-f/058'
+      label: 'Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0588'
+      label: 'Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/059'
+      label: 'Natural sciences, mathematics and statistics not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0599'
+      label: 'Natural sciences, mathematics and statistics not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/06'
+      label: 'Information and Communication Technologies (ICTs)'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/061'
+      label: 'Information and Communication Technologies (ICTs)'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0610'
+      label: 'Information and Communication Technologies (ICTs) not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0611'
+      label: 'Computer use'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0612'
+      label: 'Database and network design and administration'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0613'
+      label: 'Software and applications development and analysis'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0619'
+      label: 'Information and communication technologies not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/068'
+      label: 'Inter-disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs)'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0688'
+      label: 'Inter-disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs)'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/07'
+      label: 'Engineering, manufacturing and construction'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/070'
+      label: 'Engineering, manufacturing and construction not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0700'
+      label: 'Engineering, manufacturing and construction not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/071'
+      label: 'Engineering and engineering trades'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0710'
+      label: 'Engineering and engineering trades not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0711'
+      label: 'Chemical engineering and processes'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0712'
+      label: 'Environmental protection technology'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0713'
+      label: 'Electricity and energy'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0714'
+      label: 'Electronics and automation'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0715'
+      label: 'Mechanics and metal trades'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0716'
+      label: 'Motor vehicles, ships and aircraft'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0719'
+      label: 'Engineering and engineering trades not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/072'
+      label: 'Manufacturing and processing'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0720'
+      label: 'Manufacturing and processing not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0721'
+      label: 'Food processing'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0722'
+      label: 'Materials (glass, paper, plastic and wood)'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0723'
+      label: 'Textiles (clothes, footwear and leather)'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0724'
+      label: 'Mining and extraction'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0729'
+      label: 'Manufacturing and processing not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/073'
+      label: 'Architecture and construction'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0730'
+      label: 'Architecture and construction not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0731'
+      label: 'Architecture and town planning'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0732'
+      label: 'Building and civil engineering'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/078'
+      label: 'Inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0788'
+      label: 'Inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/079'
+      label: 'Engineering, manufacturing and construction not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0799'
+      label: 'Engineering, manufacturing and construction not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/08'
+      label: 'Agriculture, forestry, fisheries and veterinary'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/080'
+      label: 'Agriculture, forestry, fisheries and veterinary not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0800'
+      label: 'Agriculture, forestry, fisheries and veterinary not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/081'
+      label: Agriculture
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0810'
+      label: 'Agriculture not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0811'
+      label: 'Crop and livestock production'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0812'
+      label: Horticulture
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0819'
+      label: 'Agriculture not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/082'
+      label: Forestry
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0821'
+      label: Forestry
+    -
+      value: 'http://data.europa.eu/snb/isced-f/083'
+      label: Fisheries
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0831'
+      label: Fisheries
+    -
+      value: 'http://data.europa.eu/snb/isced-f/084'
+      label: Veterinary
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0841'
+      label: Veterinary
+    -
+      value: 'http://data.europa.eu/snb/isced-f/088'
+      label: 'Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0888'
+      label: 'Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/089'
+      label: 'Agriculture, forestry, fisheries and veterinary not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0899'
+      label: 'Agriculture, forestry, fisheries and veterinary not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/09'
+      label: 'Health and welfare'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/090'
+      label: 'Health and welfare not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0900'
+      label: 'Health and welfare not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/091'
+      label: Health
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0910'
+      label: 'Health not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0911'
+      label: 'Dental studies'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0912'
+      label: Medicine
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0913'
+      label: 'Nursing and midwifery'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0914'
+      label: 'Medical diagnostic and treatment technology'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0915'
+      label: 'Therapy and rehabilitation'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0916'
+      label: Pharmacy
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0917'
+      label: 'Traditional and complementary medicine and therapy'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0919'
+      label: 'Health not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/092'
+      label: Welfare
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0920'
+      label: 'Welfare not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0921'
+      label: 'Care of the elderly and of disabled adults'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0922'
+      label: 'Child care and youth services'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0923'
+      label: 'Social work and counselling'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0929'
+      label: 'Welfare not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/098'
+      label: 'Inter-disciplinary programmes and qualifications involving health and welfare'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0988'
+      label: 'Inter-disciplinary programmes and qualifications involving health and welfare'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/099'
+      label: 'Health and welfare not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/0999'
+      label: 'Health and welfare not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/10'
+      label: Services
+    -
+      value: 'http://data.europa.eu/snb/isced-f/100'
+      label: 'Services not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1000'
+      label: 'Services not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/101'
+      label: 'Personal services'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1010'
+      label: 'Personal services not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1011'
+      label: 'Domestic services'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1012'
+      label: 'Hair and beauty services'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1013'
+      label: 'Hotel, restaurants and catering'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1014'
+      label: Sports
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1015'
+      label: 'Travel, tourism and leisure'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1019'
+      label: 'Personal services not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/102'
+      label: 'Hygiene and occupational health services'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1020'
+      label: 'Hygiene and occupational health services not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1021'
+      label: 'Community sanitation'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1022'
+      label: 'Occupational health and safety'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1029'
+      label: 'Hygiene and occupational health services not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/103'
+      label: 'Security services'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1030'
+      label: 'Security services not further defined'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1031'
+      label: 'Military and defence'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1032'
+      label: 'Protection of persons and property'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1039'
+      label: 'Security services not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/104'
+      label: 'Transport services'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1041'
+      label: 'Transport services'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/108'
+      label: 'Inter-disciplinary programmes and qualifications involving services'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1088'
+      label: 'Inter-disciplinary programmes and qualifications involving services'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/109'
+      label: 'Services not elsewhere classified'
+    -
+      value: 'http://data.europa.eu/snb/isced-f/1099'
+      label: 'Services not elsewhere classified'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

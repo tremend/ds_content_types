@@ -3,15 +3,27 @@ status: true
 dependencies:
   module:
     - node
+    - options
 id: node.field_dsj_type_of_loan
 field_name: field_dsj_type_of_loan
 entity_type: node
-type: string
+type: list_string
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  allowed_values:
+    -
+      value: traditional_student_bank_loans
+      label: 'Traditional student bank loans'
+    -
+      value: online_bank_loans_for_students_with_deferred_payment
+      label: 'Online bank loans for students with deferred payment'
+    -
+      value: specific_high_tech_skills_student_loans
+      label: 'Specific high tech skills student loans'
+    -
+      value: financing_solutions_for_training_based_on_income_sharing
+      label: 'Financing solutions for training based on income-sharing'
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true
