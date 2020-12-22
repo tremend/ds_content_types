@@ -3,15 +3,24 @@ status: true
 dependencies:
   config:
     - field.field.node.dsj_article.body
-    - field.field.node.dsj_article.comment_forum
+    - field.field.node.dsj_article.field_dsj_author
+    - field.field.node.dsj_article.field_dsj_comments
+    - field.field.node.dsj_article.field_dsj_digital_skill_level
+    - field.field.node.dsj_article.field_dsj_digital_technology
+    - field.field.node.dsj_article.field_dsj_geographic_scope
     - field.field.node.dsj_article.field_dsj_image
-    - field.field.node.dsj_article.field_dsj_topics
+    - field.field.node.dsj_article.field_dsj_publish_in_core
+    - field.field.node.dsj_article.field_dsj_type_of_initiative
+    - field.field.node.dsj_article.field_dsj_website_link
+    - image.style.thumbnail
     - node.type.dsj_article
   module:
     - comment
-    - media_library
+    - image
     - path
+    - rdf_skos
     - text
+    - typed_link
 id: node.dsj_article.default
 targetEntityType: node
 bundle: dsj_article
@@ -27,38 +36,80 @@ content:
       show_summary: false
     third_party_settings: {  }
     region: content
-  comment_forum:
-    weight: 8
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_dsj_author:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_dsj_comments:
+    weight: 15
     settings: {  }
     third_party_settings: {  }
     type: comment_default
     region: content
-  created:
-    type: datetime_timestamp
-    weight: 3
-    region: content
+  field_dsj_digital_skill_level:
+    weight: 17
     settings: {  }
     third_party_settings: {  }
-  field_dsj_image:
-    weight: 9
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    type: media_library_widget
+    type: options_select
     region: content
-  field_dsj_topics:
-    weight: 10
+  field_dsj_digital_technology:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_dsj_geographic_scope:
+    weight: 12
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: skos_concept_entity_reference_autocomplete
     region: content
+  field_dsj_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_dsj_type_of_initiative:
+    weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_dsj_website_link:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: typed_link
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: { }
   path:
     type: path
-    weight: 6
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -66,21 +117,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 6
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
@@ -91,9 +142,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60
@@ -101,4 +157,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_dsj_publish_in_core: true
