@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsj_main_document_file_for
+    - node.type.dsj_digital_skills_resources
+  module:
+    - file
+id: node.dsj_digital_skills_resources.field_dsj_main_document_file_for
+field_name: field_dsj_main_document_file_for
+entity_type: node
+bundle: dsj_digital_skills_resources
+label: 'Main document-File for download'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt text md readme info doc dot docx dotx docm dotm xls xlt xla xlsx xltx xlsm xltm xlam xlsb ppt pot pps ppa pptx potx ppsx ppam pptm potm ppsm pdf ods odt odf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

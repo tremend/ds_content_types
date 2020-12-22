@@ -1,6 +1,6 @@
-name: edsjp_content_training_resource
+name: edsjp_content_digital_skills_resources
 type: module
-description: Custom module containing the Training Resource content type.
+description: Custom module containing the Digital Skills Resources content type.
 package: Custom
 core: 8.x
 php: 7.3

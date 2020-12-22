@@ -1,0 +1,237 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.dsj_comment.default
+    - field.field.node.dsj_digital_skills_resources.body
+    - field.field.node.dsj_digital_skills_resources.field_dsj_author
+    - field.field.node.dsj_digital_skills_resources.field_dsj_comments
+    - field.field.node.dsj_digital_skills_resources.field_dsj_digital_skill_level
+    - field.field.node.dsj_digital_skills_resources.field_dsj_digital_technology
+    - field.field.node.dsj_digital_skills_resources.field_dsj_geographic_scope
+    - field.field.node.dsj_digital_skills_resources.field_dsj_image
+    - field.field.node.dsj_digital_skills_resources.field_dsj_industry
+    - field.field.node.dsj_digital_skills_resources.field_dsj_main_document_file_for
+    - field.field.node.dsj_digital_skills_resources.field_dsj_methodology
+    - field.field.node.dsj_digital_skills_resources.field_dsj_organization
+    - field.field.node.dsj_digital_skills_resources.field_dsj_publish_in_core
+    - field.field.node.dsj_digital_skills_resources.field_dsj_skills_resource_type
+    - field.field.node.dsj_digital_skills_resources.field_dsj_supporting_documents
+    - field.field.node.dsj_digital_skills_resources.field_dsj_target_audience
+    - field.field.node.dsj_digital_skills_resources.field_dsj_target_group
+    - field.field.node.dsj_digital_skills_resources.field_dsj_target_language
+    - field.field.node.dsj_digital_skills_resources.field_dsj_topology_of_competence
+    - field.field.node.dsj_digital_skills_resources.field_dsj_type_of_initiative
+    - field.field.node.dsj_digital_skills_resources.field_dsj_website_link
+    - node.type.dsj_digital_skills_resources
+    - responsive_image.styles.oe_theme_main_content
+  module:
+    - comment
+    - field_group
+    - file
+    - options
+    - rdf_skos
+    - responsive_image
+    - text
+    - typed_link
+    - user
+third_party_settings:
+  field_group:
+    group_resource_details:
+      children:
+        - field_dsj_author
+        - field_dsj_digital_skill_level
+        - field_dsj_digital_technology
+        - field_dsj_geographic_scope
+        - field_dsj_industry
+        - field_dsj_main_document_file_for
+        - field_dsj_methodology
+        - field_dsj_organization
+        - field_dsj_skills_resource_type
+        - field_dsj_supporting_documents
+        - field_dsj_target_audience
+        - field_dsj_target_group
+        - field_dsj_target_language
+        - field_dsj_topology_of_competence
+        - field_dsj_type_of_initiative
+        - field_dsj_website_link
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      region: content
+      format_settings:
+        id: resource-details
+        classes: ''
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Resource Details'
+id: node.dsj_digital_skills_resources.default
+targetEntityType: node
+bundle: dsj_digital_skills_resources
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_dsj_author:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dsj_comments:
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_dsj_digital_skill_level:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_dsj_digital_technology:
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_dsj_geographic_scope:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: skos_concept_entity_reference_label
+    region: content
+  field_dsj_image:
+    weight: 2
+    label: hidden
+    settings:
+      responsive_image_style: oe_theme_main_content
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_dsj_industry:
+    weight: 5
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_dsj_main_document_file_for:
+    weight: 6
+    label: inline
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_dsj_methodology:
+    weight: 7
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_dsj_organization:
+    weight: 8
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_dsj_skills_resource_type:
+    weight: 10
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_dsj_supporting_documents:
+    weight: 11
+    label: inline
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_dsj_target_audience:
+    weight: 12
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_dsj_target_group:
+    weight: 13
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: skos_concept_entity_reference_label
+    region: content
+  field_dsj_target_language:
+    weight: 14
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: skos_concept_entity_reference_label
+    region: content
+  field_dsj_topology_of_competence:
+    weight: 15
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dsj_type_of_initiative:
+    weight: 16
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_dsj_website_link:
+    weight: 17
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: typed_link
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_dsj_publish_in_core: true
+  langcode: true
+  private_message_link: true
+  search_api_excerpt: true
