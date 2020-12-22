@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsj_is_the_certificate
+    - node.type.dsj_training_offer
+id: node.dsj_training_offer.field_dsj_is_the_certificate
+field_name: field_dsj_is_the_certificate
+entity_type: node
+bundle: dsj_training_offer
+label: 'Is the certificate\credential free'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

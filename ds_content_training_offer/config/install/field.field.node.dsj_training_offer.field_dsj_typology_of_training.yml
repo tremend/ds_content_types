@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_dsj_training_setting
+    - field.storage.node.field_dsj_typology_of_training
     - node.type.dsj_training_offer
   module:
     - rdf_skos
-id: node.dsj_training_offer.field_dsj_training_setting
-field_name: field_dsj_training_setting
+id: node.dsj_training_offer.field_dsj_typology_of_training
+field_name: field_dsj_typology_of_training
 entity_type: node
 bundle: dsj_training_offer
-label: 'Training Setting'
+label: 'Typology of training opportunties'
 description: ''
 required: true
 translatable: false
@@ -24,11 +24,11 @@ settings:
       field: _none
     auto_create: false
     concept_schemes:
-      - 'http://data.europa.eu/snb/learning-assessment/25831c2'
+      - 'http://data.europa.eu/snb/learning-opportunity/25831c2'
     field:
-      field_name: field_dsj_training_setting
+      field_name: field_dsj_typology_of_training
       entity_type: node
       bundle: dsj_training_offer
       concept_schemes:
-        - 'http://data.europa.eu/snb/learning-assessment/25831c2'
+        - 'http://data.europa.eu/snb/learning-opportunity/25831c2'
 field_type: skos_concept_entity_reference
