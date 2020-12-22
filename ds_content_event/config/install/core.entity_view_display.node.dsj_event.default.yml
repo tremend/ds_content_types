@@ -2,22 +2,61 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment_forum.default
+    - core.entity_view_display.comment.dsj_comment.default
     - field.field.node.dsj_event.body
-    - field.field.node.dsj_event.comment_forum
+    - field.field.node.dsj_event.field_dsj_author
+    - field.field.node.dsj_event.field_dsj_comments
     - field.field.node.dsj_event.field_dsj_date
+    - field.field.node.dsj_event.field_dsj_digital_skill_level
+    - field.field.node.dsj_event.field_dsj_digital_technology
+    - field.field.node.dsj_event.field_dsj_geographic_scope
     - field.field.node.dsj_event.field_dsj_image
-    - field.field.node.dsj_event.field_dsj_related_link
-    - field.field.node.dsj_event.field_dsj_summary
-    - field.field.node.dsj_event.field_dsj_target_group
-    - field.field.node.dsj_event.field_dsj_topics
+    - field.field.node.dsj_event.field_dsj_industry
+    - field.field.node.dsj_event.field_dsj_publish_in_core
+    - field.field.node.dsj_event.field_dsj_target_audience
+    - field.field.node.dsj_event.field_dsj_target_language
+    - field.field.node.dsj_event.field_dsj_type_of_initiative
+    - field.field.node.dsj_event.field_dsj_website_link
     - node.type.dsj_event
+    - responsive_image.styles.oe_theme_main_content
   module:
     - comment
     - datetime_range
-    - link
+    - field_group
+    - options
+    - rdf_skos
+    - responsive_image
     - text
+    - typed_link
     - user
+third_party_settings:
+  field_group:
+    group_event_details:
+      children:
+        - langcode
+        - field_dsj_geographic_scope
+        - field_dsj_website_link
+        - field_dsj_author
+        - field_dsj_target_language
+        - field_dsj_industry
+        - field_dsj_target_audience
+        - field_dsj_digital_skill_level
+        - field_dsj_type_of_initiative
+      parent_name: ''
+      weight: 5
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: event-details
+        classes: ''
+      label: 'Event Details'
 id: node.dsj_event.default
 targetEntityType: node
 bundle: dsj_event
@@ -25,14 +64,23 @@ mode: default
 content:
   body:
     label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
+    type: text_summary_or_trimmed
+    weight: 3
+    settings:
+      trim_length: 600
     third_party_settings: {  }
     region: content
-  comment_forum:
-    weight: 102
-    label: above
+  field_dsj_author:
+    weight: 13
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dsj_comments:
+    weight: 6
+    label: hidden
     settings:
       view_mode: default
       pager_id: 0
@@ -40,26 +88,71 @@ content:
     type: comment_default
     region: content
   field_dsj_date:
-    weight: 103
-    label: above
+    weight: 2
+    label: hidden
     settings:
-      separator: '-'
-      format_type: medium
       timezone_override: ''
+      format_type: html_date
+      separator: '-'
     third_party_settings: {  }
     type: daterange_default
     region: content
-  field_dsj_image:
-    weight: 104
-    label: above
+  field_dsj_digital_skill_level:
+    weight: 17
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_dsj_geographic_scope:
+    weight: 11
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    type: skos_concept_entity_reference_label
     region: content
-  field_dsj_related_link:
-    weight: 105
-    label: above
+  field_dsj_image:
+    weight: 4
+    label: hidden
+    settings:
+      responsive_image_style: oe_theme_main_content
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_dsj_industry:
+    weight: 15
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_dsj_target_audience:
+    weight: 16
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_dsj_target_language:
+    weight: 14
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: skos_concept_entity_reference_label
+    region: content
+  field_dsj_type_of_initiative:
+    weight: 18
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_dsj_website_link:
+    weight: 12
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -67,34 +160,24 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    type: typed_link
     region: content
-  field_dsj_summary:
-    weight: 106
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
+  langcode:
+    type: language
+    weight: 10
     region: content
-  field_dsj_target_group:
-    weight: 107
-    label: above
+    label: inline
     settings:
       link_to_entity: false
+      native_language: false
     third_party_settings: {  }
-    type: string
-    region: content
-  field_dsj_topics:
-    weight: 108
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  field_dsj_digital_technology: true
+  field_dsj_publish_in_core: true
+  private_message_link: true
+  search_api_excerpt: true
