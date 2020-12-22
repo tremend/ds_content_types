@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_dsj_form_of_funding
+    - field.storage.node.field_dsj_type_of_initiative
     - node.type.dsj_funding_opportunity
   module:
     - options
-id: node.dsj_funding_opportunity.field_dsj_form_of_funding
-field_name: field_dsj_form_of_funding
+id: node.dsj_funding_opportunity.field_dsj_type_of_initiative
+field_name: field_dsj_type_of_initiative
 entity_type: node
 bundle: dsj_funding_opportunity
-label: 'Form Of Funding'
+label: 'Type of initiative'
 description: ''
 required: true
 translatable: true

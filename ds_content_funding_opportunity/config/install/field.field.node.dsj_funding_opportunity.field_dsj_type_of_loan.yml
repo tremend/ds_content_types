@@ -4,15 +4,17 @@ dependencies:
   config:
     - field.storage.node.field_dsj_type_of_loan
     - node.type.dsj_funding_opportunity
+  module:
+    - options
 id: node.dsj_funding_opportunity.field_dsj_type_of_loan
 field_name: field_dsj_type_of_loan
 entity_type: node
 bundle: dsj_funding_opportunity
-label: 'Type of Loan'
+label: 'Type of loan'
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: list_string
