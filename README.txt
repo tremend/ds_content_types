@@ -1,7 +1,39 @@
-Make sure that those modules are installed before enabling this module:
-1. OpenEuropa - Media(https://github.com/openeuropa/oe_media)
+Make sure that those modules are installed and enabled before enabling this module:
+1. OpenEuropa - Media(https://github.com/openeuropa/oe_media) - Will be removed in the future.
+composer require openeuropa/oe_media
+Don't forget to enable
+
 2. Drupal - Typed Link(https://www.drupal.org/project/typed_link)
+composer require drupal/typed_link
+
 3. OpenEuropa - RDF Skos(https://github.com/openeuropa/rdf_skos)
+composer require easyrdf/easyrdf:"0.10.0-alpha.1 as 0.9.1"
+composer require openeuropa/rdf_skos
+!!IMPORTANT!! - Enable the module only after adding the sparql database connection.
+Make sure to restart your docker container(docker-compose stop && docker-compose up -d)
+After running those commands, you will need to add the sparql database to your project. Add the sparql container under services in your docker-compose.yml file:
+
+  sparql:
+    image: openeuropa/triple-store-dev
+    environment:
+      - SPARQL_UPDATE=true
+      - DBA_PASSWORD=dba
+    ports:
+      - "8890:8890
+
+Let Drupal know about your connection in your settings.php file:
+$databases["sparql_default"] = array(
+  'default' => array(
+    'prefix' => '',
+    'host' => 'sparql',
+    'port' => '8890',
+    'namespace' => 'Drupal\\Driver\\Database\\sparql',
+    'driver' => 'sparql'
+  )
+);
+
+4. Drupal - FieldGroup(https://www.drupal.org/project/field_group)
+composer require drupal/field_group
 
 The main module contains a submodule for each content type available. Those content types are:
 1. Article
