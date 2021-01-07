@@ -30,9 +30,10 @@ dependencies:
     - file
     - image
     - path
-    - rdf_skos
     - text
     - typed_link
+_core:
+  default_config_hash: h3ru1mSev1EvMgPC7VRSaT7VQ30-JNZ4-iaarOhLQno
 id: node.dsj_strategies.default
 targetEntityType: node
 bundle: dsj_strategies
@@ -96,14 +97,10 @@ content:
     type: file_generic
     region: content
   field_dsj_geographic_scope:
-    weight: 17
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 29
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_autocomplete
+    type: options_select
     region: content
   field_dsj_image:
     weight: 2
@@ -158,14 +155,10 @@ content:
     type: options_select
     region: content
   field_dsj_target_language:
-    weight: 22
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 30
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_autocomplete
+    type: options_select
     region: content
   field_dsj_timeline_roadmap:
     weight: 23
@@ -189,13 +182,6 @@ content:
     third_party_settings: {  }
     type: typed_link
     region: content
-  langcode:
-    type: language_select
-    weight: 3
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
     weight: 9

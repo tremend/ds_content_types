@@ -24,7 +24,6 @@ dependencies:
     - datetime_range
     - field_group
     - options
-    - rdf_skos
     - responsive_image
     - text
     - typed_link
@@ -57,6 +56,8 @@ third_party_settings:
         id: event-details
         classes: ''
       label: 'Event Details'
+_core:
+  default_config_hash: 4Yhp9O6isDq46WjY3VGwsuMiAluhVaIaKWc4c28ISKg
 id: node.dsj_event.default
 targetEntityType: node
 bundle: dsj_event
@@ -105,12 +106,11 @@ content:
     type: list_default
     region: content
   field_dsj_geographic_scope:
-    weight: 11
-    label: inline
-    settings:
-      link: true
+    weight: 19
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_label
+    type: list_default
     region: content
   field_dsj_image:
     weight: 4
@@ -136,12 +136,11 @@ content:
     type: list_default
     region: content
   field_dsj_target_language:
-    weight: 14
-    label: inline
-    settings:
-      link: true
+    weight: 20
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_label
+    type: list_default
     region: content
   field_dsj_type_of_initiative:
     weight: 18
@@ -162,15 +161,6 @@ content:
     third_party_settings: {  }
     type: typed_link
     region: content
-  langcode:
-    type: language
-    weight: 10
-    region: content
-    label: inline
-    settings:
-      link_to_entity: false
-      native_language: false
-    third_party_settings: {  }
   links:
     weight: 1
     region: content

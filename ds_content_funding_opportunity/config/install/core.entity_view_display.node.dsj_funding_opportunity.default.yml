@@ -27,7 +27,6 @@ dependencies:
     - comment
     - field_group
     - options
-    - rdf_skos
     - responsive_image
     - text
     - typed_link
@@ -64,6 +63,8 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Opportunity Details'
+_core:
+  default_config_hash: 91Dm7__f4CEg5qCHxngOLrBtvidqrRBa8cU_nLf-lYo
 id: node.dsj_funding_opportunity.default
 targetEntityType: node
 bundle: dsj_funding_opportunity
@@ -132,12 +133,11 @@ content:
     type: list_default
     region: content
   field_dsj_geographic_scope:
-    weight: 7
-    label: inline
-    settings:
-      link: true
+    weight: 17
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_label
+    type: list_default
     region: content
   field_dsj_image:
     weight: 3
@@ -163,12 +163,11 @@ content:
     type: list_default
     region: content
   field_dsj_target_group:
-    weight: 10
-    label: inline
-    settings:
-      link: true
+    weight: 18
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_label
+    type: list_default
     region: content
   field_dsj_type_of_initiative:
     weight: 14
@@ -204,6 +203,5 @@ content:
 hidden:
   field_dsj_digital_technology: true
   field_dsj_publish_in_core: true
-  langcode: true
   private_message_link: true
   search_api_excerpt: true

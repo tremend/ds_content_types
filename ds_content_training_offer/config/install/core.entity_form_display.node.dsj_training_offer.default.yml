@@ -34,9 +34,10 @@ dependencies:
     - datetime
     - image
     - path
-    - rdf_skos
     - text
     - typed_link
+_core:
+  default_config_hash: F8Qx2iGb6rTJZHYhT9xAxqNsWrFTYEaXpPaJGPo3t1c
 id: node.dsj_training_offer.default
 targetEntityType: node
 bundle: dsj_training_offer
@@ -80,14 +81,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_dsj_credential_offered:
-    weight: 15
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 37
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_autocomplete
+    type: options_select
     region: content
   field_dsj_digital_skill_level:
     weight: 31
@@ -102,24 +99,16 @@ content:
     type: options_select
     region: content
   field_dsj_effort:
-    weight: 17
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 38
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_autocomplete
+    type: options_select
     region: content
   field_dsj_geographic_scope:
-    weight: 13
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 34
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_autocomplete
+    type: options_select
     region: content
   field_dsj_image:
     weight: 2
@@ -166,24 +155,16 @@ content:
     type: options_select
     region: content
   field_dsj_target_group:
-    weight: 26
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 35
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_autocomplete
+    type: options_select
     region: content
   field_dsj_target_language:
-    weight: 24
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 36
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_autocomplete
+    type: options_select
     region: content
   field_dsj_topics:
     type: entity_reference_autocomplete
@@ -202,14 +183,10 @@ content:
     type: options_select
     region: content
   field_dsj_training_setting:
-    weight: 28
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 39
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_autocomplete
+    type: options_select
     region: content
   field_dsj_training_start_date:
     weight: 18
@@ -232,14 +209,10 @@ content:
     type: string_textfield
     region: content
   field_dsj_typology_of_training:
-    weight: 27
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 40
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_autocomplete
+    type: options_select
     region: content
   field_dsj_website_link:
     weight: 14
@@ -249,13 +222,6 @@ content:
     third_party_settings: {  }
     type: typed_link
     region: content
-  langcode:
-    type: language_select
-    weight: 3
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
     weight: 8

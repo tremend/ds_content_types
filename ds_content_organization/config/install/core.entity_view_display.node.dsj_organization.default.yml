@@ -22,11 +22,12 @@ dependencies:
   module:
     - comment
     - options
-    - rdf_skos
     - responsive_image
     - text
     - typed_link
     - user
+_core:
+  default_config_hash: QGxafOuXhIPLeT1aKCNEvP5Z-_0V5r0E8Wrsxcy-JMI
 id: node.dsj_organization.default
 targetEntityType: node
 bundle: dsj_organization
@@ -64,12 +65,11 @@ content:
     type: list_default
     region: content
   field_dsj_geographic_scope:
-    weight: 6
+    weight: 16
     label: above
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_label
+    type: list_default
     region: content
   field_dsj_image:
     weight: 3
@@ -138,6 +138,5 @@ content:
 hidden:
   field_dsj_digital_technology: true
   field_dsj_publish_in_core: true
-  langcode: true
   private_message_link: true
   search_api_excerpt: true

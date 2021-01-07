@@ -24,7 +24,6 @@ dependencies:
     - field_group
     - image
     - options
-    - rdf_skos
     - text
     - typed_link
     - user
@@ -34,7 +33,6 @@ third_party_settings:
       children:
         - field_dsj_digital_skill_level
         - field_dsj_digital_technology
-        - field_dsj_geographic_scope
         - field_dsj_post_date
         - field_dsj_target_audience
         - field_dsj_website_link
@@ -42,6 +40,7 @@ third_party_settings:
         - field_dsj_industry
         - field_dsj_type_of_initiative
         - field_dsj_publication_type
+        - field_dsj_geographic_scope
       parent_name: ''
       weight: 3
       format_type: html_element
@@ -57,6 +56,8 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Publication Details'
+_core:
+  default_config_hash: WVVr0zN_CZoOjSKQzCHLqCrIA_ipZf-jTbzfuaLx-7I
 id: node.dsj_skills_intelligence.default
 targetEntityType: node
 bundle: dsj_skills_intelligence
@@ -101,12 +102,11 @@ content:
     type: list_default
     region: content
   field_dsj_geographic_scope:
-    weight: 6
-    label: inline
-    settings:
-      link: true
+    weight: 15
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_label
+    type: list_default
     region: content
   field_dsj_image:
     weight: 1
@@ -120,10 +120,9 @@ content:
   field_dsj_industry:
     weight: 12
     label: inline
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_label
+    type: list_default
     region: content
   field_dsj_post_date:
     weight: 7
@@ -144,10 +143,9 @@ content:
   field_dsj_target_audience:
     weight: 9
     label: inline
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_label
+    type: list_default
     region: content
   field_dsj_type_of_initiative:
     weight: 13
@@ -175,6 +173,5 @@ content:
     third_party_settings: {  }
 hidden:
   field_dsj_publish_in_core: true
-  langcode: true
   private_message_link: true
   search_api_excerpt: true

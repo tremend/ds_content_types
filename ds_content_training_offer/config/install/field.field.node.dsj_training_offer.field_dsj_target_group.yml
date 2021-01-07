@@ -5,7 +5,7 @@ dependencies:
     - field.storage.node.field_dsj_target_group
     - node.type.dsj_training_offer
   module:
-    - rdf_skos
+    - options
 id: node.dsj_training_offer.field_dsj_target_group
 field_name: field_dsj_target_group
 entity_type: node
@@ -13,22 +13,8 @@ bundle: dsj_training_offer
 label: 'Target Group'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: 'default:skos_concept'
-  handler_settings:
-    target_bundles: null
-    sort:
-      field: _none
-    auto_create: false
-    concept_schemes:
-      - 'http://data.europa.eu/snb/target-group/25831c2'
-    field:
-      field_name: field_dsj_target_group
-      entity_type: node
-      bundle: dsj_training_offer
-      concept_schemes:
-        - 'http://data.europa.eu/snb/target-group/25831c2'
-field_type: skos_concept_entity_reference
+settings: {  }
+field_type: list_string

@@ -22,9 +22,10 @@ dependencies:
     - comment
     - image
     - path
-    - rdf_skos
     - text
     - typed_link
+_core:
+  default_config_hash: UFJMAK8lkZxe62vQohOQY9NSZGYVmUKTI4BfdWFc95Y
 id: node.dsj_organization.default
 targetEntityType: node
 bundle: dsj_organization
@@ -73,14 +74,10 @@ content:
     type: options_select
     region: content
   field_dsj_geographic_scope:
-    weight: 14
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 26
+    settings: {  }
     third_party_settings: {  }
-    type: skos_concept_entity_reference_autocomplete
+    type: options_select
     region: content
   field_dsj_image:
     weight: 2
@@ -129,13 +126,6 @@ content:
     third_party_settings: {  }
     type: typed_link
     region: content
-  langcode:
-    type: language_select
-    weight: 3
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
     weight: 8
