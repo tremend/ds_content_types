@@ -22,12 +22,11 @@ dependencies:
     - field.field.node.dsj_funding_opportunity.field_dsj_type_of_loan
     - field.field.node.dsj_funding_opportunity.field_dsj_website_link
     - node.type.dsj_funding_opportunity
-    - responsive_image.styles.oe_theme_main_content
   module:
     - comment
     - field_group
+    - image
     - options
-    - responsive_image
     - text
     - typed_link
     - user
@@ -47,14 +46,11 @@ third_party_settings:
         - field_dsj_type_of_loan
         - field_dsj_type_of_initiative
         - field_dsj_industry
-        - field_dsj_author
       parent_name: ''
       weight: 4
       format_type: html_element
       region: content
       format_settings:
-        id: opportunity-details
-        classes: ''
         element: div
         show_label: true
         label_element: h3
@@ -62,9 +58,9 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
+        id: opportunity-details
+        classes: bordered-field-list
       label: 'Opportunity Details'
-_core:
-  default_config_hash: 91Dm7__f4CEg5qCHxngOLrBtvidqrRBa8cU_nLf-lYo
 id: node.dsj_funding_opportunity.default
 targetEntityType: node
 bundle: dsj_funding_opportunity
@@ -73,17 +69,9 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_dsj_author:
-    weight: 16
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_dsj_beneficiaries:
     weight: 4
@@ -134,19 +122,19 @@ content:
     region: content
   field_dsj_geographic_scope:
     weight: 17
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_image:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
-      responsive_image_style: oe_theme_main_content
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: responsive_image
+    type: image
     region: content
   field_dsj_industry:
     weight: 15
@@ -163,9 +151,10 @@ content:
     type: list_default
     region: content
   field_dsj_target_group:
-    weight: 18
-    label: above
-    settings: {  }
+    weight: 10
+    label: inline
+    settings:
+      link: true
     third_party_settings: {  }
     type: list_default
     region: content
@@ -201,7 +190,9 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_dsj_author: true
   field_dsj_digital_technology: true
   field_dsj_publish_in_core: true
+  langcode: true
   private_message_link: true
   search_api_excerpt: true

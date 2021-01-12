@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.field.node.dsj_good_practice.body
-    - field.field.node.dsj_good_practice.field_dsj_audio_visual
     - field.field.node.dsj_good_practice.field_dsj_author
     - field.field.node.dsj_good_practice.field_dsj_comments
     - field.field.node.dsj_good_practice.field_dsj_date
@@ -12,6 +11,10 @@ dependencies:
     - field.field.node.dsj_good_practice.field_dsj_geographic_scope
     - field.field.node.dsj_good_practice.field_dsj_image
     - field.field.node.dsj_good_practice.field_dsj_industry
+    - field.field.node.dsj_good_practice.field_dsj_media_audio
+    - field.field.node.dsj_good_practice.field_dsj_media_documents
+    - field.field.node.dsj_good_practice.field_dsj_media_image
+    - field.field.node.dsj_good_practice.field_dsj_media_video
     - field.field.node.dsj_good_practice.field_dsj_organization
     - field.field.node.dsj_good_practice.field_dsj_publish_in_core
     - field.field.node.dsj_good_practice.field_dsj_target_audience
@@ -23,13 +26,11 @@ dependencies:
   module:
     - comment
     - datetime_range
+    - file
     - image
-    - media_library
     - path
     - text
     - typed_link
-_core:
-  default_config_hash: 8j6RsxsZzhL_b9Lu3MT_7_A2a5Jayte23o-pYAYZGPg
 id: node.dsj_good_practice.default
 targetEntityType: node
 bundle: dsj_good_practice
@@ -51,13 +52,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_dsj_audio_visual:
-    type: media_library_widget
-    weight: 19
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    region: content
   field_dsj_author:
     weight: 18
     settings:
@@ -109,6 +103,34 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_dsj_media_audio:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_dsj_media_documents:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_dsj_media_image:
+    weight: 30
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_dsj_media_video:
+    weight: 29
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
     region: content
   field_dsj_organization:
     weight: 12

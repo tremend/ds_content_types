@@ -16,12 +16,11 @@ dependencies:
     - field.field.node.dsj_initiative.field_dsj_type_of_initiative
     - field.field.node.dsj_initiative.field_dsj_website_link
     - node.type.dsj_initiative
-    - responsive_image.styles.oe_theme_main_content
   module:
     - comment
     - field_group
+    - image
     - options
-    - responsive_image
     - text
     - typed_link
     - user
@@ -29,11 +28,9 @@ third_party_settings:
   field_group:
     group_initiative_details:
       children:
-        - field_dsj_author
         - field_dsj_geographic_scope
         - langcode
         - field_dsj_website_link
-        - field_dsj_target_language
         - field_dsj_target_audience
         - field_dsj_digital_skill_level
         - field_dsj_type_of_initiative
@@ -43,8 +40,6 @@ third_party_settings:
       format_type: html_element
       region: content
       format_settings:
-        id: ''
-        classes: initiative-details
         element: div
         show_label: true
         label_element: h3
@@ -52,9 +47,9 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
+        id: initiative-details
+        classes: bordered-field-list
       label: 'Initiative Details'
-_core:
-  default_config_hash: w3XWqtPPUnt5xUidlK4YHRV9vpmCyARZY8ohuPtLGro
 id: node.dsj_initiative.default
 targetEntityType: node
 bundle: dsj_initiative
@@ -63,17 +58,9 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_dsj_author:
-    weight: 5
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_dsj_comments:
     weight: 5
@@ -92,20 +79,21 @@ content:
     type: list_default
     region: content
   field_dsj_geographic_scope:
-    weight: 15
-    label: above
-    settings: {  }
+    weight: 6
+    label: inline
+    settings:
+      link: true
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_image:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
-      responsive_image_style: oe_theme_main_content
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: responsive_image
+    type: image
     region: content
   field_dsj_industry:
     weight: 14
@@ -146,6 +134,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_dsj_author: true
   field_dsj_digital_technology: true
   field_dsj_publish_in_core: true
   private_message_link: true

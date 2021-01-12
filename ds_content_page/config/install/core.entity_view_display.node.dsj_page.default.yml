@@ -10,10 +10,9 @@ dependencies:
     - field.field.node.dsj_page.field_dsj_publish_in_core
     - field.field.node.dsj_page.field_dsj_website_link
     - node.type.dsj_page
-    - responsive_image.styles.oe_theme_main_content
   module:
     - comment
-    - responsive_image
+    - image
     - text
     - typed_link
     - user
@@ -29,14 +28,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_dsj_author:
-    weight: 2
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_dsj_comments:
     weight: 6
     label: hidden
@@ -47,16 +38,16 @@ content:
     type: comment_default
     region: content
   field_dsj_image:
-    weight: 4
+    weight: 2
     label: hidden
     settings:
-      responsive_image_style: oe_theme_main_content
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: responsive_image
+    type: image
     region: content
   field_dsj_website_link:
-    weight: 5
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
@@ -73,6 +64,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_dsj_author: true
   field_dsj_publish_in_core: true
   langcode: true
   private_message_link: true

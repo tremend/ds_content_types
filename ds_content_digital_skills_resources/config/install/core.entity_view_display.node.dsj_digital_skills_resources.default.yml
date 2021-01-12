@@ -24,13 +24,12 @@ dependencies:
     - field.field.node.dsj_digital_skills_resources.field_dsj_type_of_initiative
     - field.field.node.dsj_digital_skills_resources.field_dsj_website_link
     - node.type.dsj_digital_skills_resources
-    - responsive_image.styles.oe_theme_main_content
   module:
     - comment
     - field_group
     - file
+    - image
     - options
-    - responsive_image
     - text
     - typed_link
     - user
@@ -38,7 +37,6 @@ third_party_settings:
   field_group:
     group_resource_details:
       children:
-        - field_dsj_author
         - field_dsj_digital_skill_level
         - field_dsj_digital_technology
         - field_dsj_geographic_scope
@@ -55,7 +53,7 @@ third_party_settings:
         - field_dsj_type_of_initiative
         - field_dsj_website_link
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: html_element
       region: content
       format_settings:
@@ -69,8 +67,6 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Resource Details'
-_core:
-  default_config_hash: 5xh-evjlZkT3qflGTc3sheBVsPjXYbaiohvlLI6i0_4
 id: node.dsj_digital_skills_resources.default
 targetEntityType: node
 bundle: dsj_digital_skills_resources
@@ -82,14 +78,6 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_dsj_author:
-    weight: 1
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_dsj_comments:
     weight: 4
@@ -125,10 +113,10 @@ content:
     weight: 2
     label: hidden
     settings:
-      responsive_image_style: oe_theme_main_content
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: responsive_image
+    type: image
     region: content
   field_dsj_industry:
     weight: 5
@@ -229,6 +217,8 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_dsj_author: true
   field_dsj_publish_in_core: true
+  langcode: true
   private_message_link: true
   search_api_excerpt: true

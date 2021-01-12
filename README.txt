@@ -1,12 +1,8 @@
 Make sure that those modules are installed and enabled before enabling this module:
-1. OpenEuropa - Media(https://github.com/openeuropa/oe_media) - Will be removed in the future.
-composer require openeuropa/oe_media
-Don't forget to enable
-
-2. Drupal - Typed Link(https://www.drupal.org/project/typed_link)
+1. Drupal - Typed Link(https://www.drupal.org/project/typed_link)
 composer require drupal/typed_link
 
-3. Drupal - FieldGroup(https://www.drupal.org/project/field_group)
+2. Drupal - FieldGroup(https://www.drupal.org/project/field_group)
 composer require drupal/field_group
 
 The main module contains a submodule for each content type available. Those content types are:
@@ -92,7 +88,10 @@ Common fields:
     4.18. Website Link
 5. Good Practice
     5.1. Body
-    5.2. Audio Visual
+    5.2. Media field - still image
+    5.3. Media field - video
+    5.4. Media field - audio
+    5.6. Media field - document
     5.3. Author
     5.4. Comments
     5.5. Date

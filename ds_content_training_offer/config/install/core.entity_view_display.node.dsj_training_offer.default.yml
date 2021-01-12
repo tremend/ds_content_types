@@ -29,13 +29,12 @@ dependencies:
     - field.field.node.dsj_training_offer.field_dsj_typology_of_training
     - field.field.node.dsj_training_offer.field_dsj_website_link
     - node.type.dsj_training_offer
-    - responsive_image.styles.oe_theme_main_content
   module:
     - comment
     - datetime
     - field_group
+    - image
     - options
-    - responsive_image
     - text
     - typed_link
     - user
@@ -44,7 +43,6 @@ third_party_settings:
     group_offer_details:
       children:
         - field_dsj_cost_of_training
-        - field_dsj_author
         - field_dsj_type_of_training
         - field_dsj_geographic_scope
         - field_dsj_website_link
@@ -68,8 +66,6 @@ third_party_settings:
       format_type: html_element
       region: content
       format_settings:
-        id: offer-details
-        classes: ''
         element: div
         show_label: true
         label_element: h3
@@ -77,9 +73,9 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'Offer Details'
-_core:
-  default_config_hash: Dz4XGgkC9HkJp00JdIiiFpbWxIH12lfOE5px0OHbGKk
+        id: offer-details
+        classes: bordered-field-list
+      label: 'Training Offer Details'
 id: node.dsj_training_offer.default
 targetEntityType: node
 bundle: dsj_training_offer
@@ -88,17 +84,9 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_dsj_author:
-    weight: 5
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_dsj_comments:
     type: comment_default
@@ -120,7 +108,7 @@ content:
     region: content
   field_dsj_credential_offered:
     weight: 27
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
@@ -134,26 +122,27 @@ content:
     region: content
   field_dsj_effort:
     weight: 28
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_geographic_scope:
-    weight: 24
-    label: above
-    settings: {  }
+    weight: 7
+    label: inline
+    settings:
+      link: true
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_image:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
-      responsive_image_style: oe_theme_main_content
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: responsive_image
+    type: image
     region: content
   field_dsj_industry:
     weight: 20
@@ -198,16 +187,18 @@ content:
     type: list_default
     region: content
   field_dsj_target_group:
-    weight: 25
-    label: above
-    settings: {  }
+    weight: 10
+    label: inline
+    settings:
+      link: true
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_target_language:
-    weight: 26
-    label: above
-    settings: {  }
+    weight: 9
+    label: inline
+    settings:
+      link: true
     third_party_settings: {  }
     type: list_default
     region: content
@@ -219,9 +210,10 @@ content:
     type: list_default
     region: content
   field_dsj_training_setting:
-    weight: 29
-    label: above
-    settings: {  }
+    weight: 12
+    label: inline
+    settings:
+      link: true
     third_party_settings: {  }
     type: list_default
     region: content
@@ -250,9 +242,10 @@ content:
     type: string
     region: content
   field_dsj_typology_of_training:
-    weight: 30
-    label: above
-    settings: {  }
+    weight: 11
+    label: inline
+    settings:
+      link: true
     third_party_settings: {  }
     type: list_default
     region: content
@@ -274,7 +267,9 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_dsj_author: true
   field_dsj_digital_technology: true
   field_dsj_publish_in_core: true
+  langcode: true
   private_message_link: true
   search_api_excerpt: true

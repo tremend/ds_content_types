@@ -14,16 +14,13 @@ dependencies:
     - field.field.node.dsj_article.field_dsj_type_of_initiative
     - field.field.node.dsj_article.field_dsj_website_link
     - node.type.dsj_article
-    - responsive_image.styles.oe_theme_main_content
   module:
     - comment
+    - image
     - options
-    - responsive_image
     - text
     - typed_link
     - user
-_core:
-  default_config_hash: ohW_dqvkJc0oR4zAnCg7ZdPiTW-AESywNE68YeLbq-E
 id: node.dsj_article.default
 targetEntityType: node
 bundle: dsj_article
@@ -36,17 +33,9 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_dsj_author:
-    weight: 1
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_dsj_comments:
     weight: 7
-    label: above
+    label: hidden
     settings:
       view_mode: default
       pager_id: 0
@@ -78,10 +67,10 @@ content:
     weight: 3
     label: hidden
     settings:
-      responsive_image_style: oe_theme_main_content
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: responsive_image
+    type: image
     region: content
   field_dsj_type_of_initiative:
     weight: 10
@@ -108,6 +97,8 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_dsj_author: true
   field_dsj_publish_in_core: true
+  langcode: true
   private_message_link: true
   search_api_excerpt: true
