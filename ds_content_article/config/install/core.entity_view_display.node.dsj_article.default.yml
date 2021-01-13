@@ -44,21 +44,21 @@ content:
     region: content
   field_dsj_digital_skill_level:
     weight: 9
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_digital_technology:
     weight: 6
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_geographic_scope:
     weight: 11
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
@@ -74,14 +74,14 @@ content:
     region: content
   field_dsj_type_of_initiative:
     weight: 10
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_website_link:
     weight: 4
-    label: above
+    label: inline
     settings:
       trim_length: 80
       url_only: false

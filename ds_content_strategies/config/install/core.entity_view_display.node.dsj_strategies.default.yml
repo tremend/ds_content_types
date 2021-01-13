@@ -84,7 +84,7 @@ content:
     region: content
   field_dsj_author:
     weight: 1
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -131,7 +131,7 @@ content:
     region: content
   field_dsj_geographic_scope:
     weight: 18
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
@@ -194,7 +194,7 @@ content:
     region: content
   field_dsj_target_language:
     weight: 19
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
