@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_dsj_file_for_download
-    - node.type.dsj_strategies
+    - node.type.dsj_strategy
   module:
     - file
-id: node.dsj_strategies.field_dsj_file_for_download
+id: node.dsj_strategy.field_dsj_file_for_download
 field_name: field_dsj_file_for_download
 entity_type: node
-bundle: dsj_strategies
+bundle: dsj_strategy
 label: 'File for download'
 description: ''
 required: false

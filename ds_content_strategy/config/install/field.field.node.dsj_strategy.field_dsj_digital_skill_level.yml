@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_dsj_target_audience
-    - node.type.dsj_strategies
+    - field.storage.node.field_dsj_digital_skill_level
+    - node.type.dsj_strategy
   module:
     - options
-id: node.dsj_strategies.field_dsj_target_audience
-field_name: field_dsj_target_audience
+id: node.dsj_strategy.field_dsj_digital_skill_level
+field_name: field_dsj_digital_skill_level
 entity_type: node
-bundle: dsj_strategies
-label: 'Target Audience'
+bundle: dsj_strategy
+label: 'Digital Skill level'
 description: ''
 required: true
 translatable: true

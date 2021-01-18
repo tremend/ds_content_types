@@ -2,46 +2,42 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.dsj_strategies.body
-    - field.field.node.dsj_strategies.field_dsj_author
-    - field.field.node.dsj_strategies.field_dsj_budget
-    - field.field.node.dsj_strategies.field_dsj_comments
-    - field.field.node.dsj_strategies.field_dsj_digital_skill_level
-    - field.field.node.dsj_strategies.field_dsj_digital_technology
-    - field.field.node.dsj_strategies.field_dsj_file_for_download
-    - field.field.node.dsj_strategies.field_dsj_geographic_scope
-    - field.field.node.dsj_strategies.field_dsj_image
-    - field.field.node.dsj_strategies.field_dsj_industry
-    - field.field.node.dsj_strategies.field_dsj_latest_update_strategy
-    - field.field.node.dsj_strategies.field_dsj_organization
-    - field.field.node.dsj_strategies.field_dsj_publish_in_core
-    - field.field.node.dsj_strategies.field_dsj_stakeholder
-    - field.field.node.dsj_strategies.field_dsj_strategy_state_of_play
-    - field.field.node.dsj_strategies.field_dsj_target_audience
-    - field.field.node.dsj_strategies.field_dsj_target_language
-    - field.field.node.dsj_strategies.field_dsj_timeline_roadmap
-    - field.field.node.dsj_strategies.field_dsj_type_of_initiative
-    - field.field.node.dsj_strategies.field_dsj_website_link
+    - field.field.node.dsj_strategy.body
+    - field.field.node.dsj_strategy.field_dsj_author
+    - field.field.node.dsj_strategy.field_dsj_budget
+    - field.field.node.dsj_strategy.field_dsj_digital_skill_level
+    - field.field.node.dsj_strategy.field_dsj_digital_technology
+    - field.field.node.dsj_strategy.field_dsj_file_for_download
+    - field.field.node.dsj_strategy.field_dsj_geographic_scope
+    - field.field.node.dsj_strategy.field_dsj_image
+    - field.field.node.dsj_strategy.field_dsj_industry
+    - field.field.node.dsj_strategy.field_dsj_latest_update_strategy
+    - field.field.node.dsj_strategy.field_dsj_organization
+    - field.field.node.dsj_strategy.field_dsj_publish_in_core
+    - field.field.node.dsj_strategy.field_dsj_stakeholder
+    - field.field.node.dsj_strategy.field_dsj_strategy_state_of_play
+    - field.field.node.dsj_strategy.field_dsj_target_audience
+    - field.field.node.dsj_strategy.field_dsj_target_language
+    - field.field.node.dsj_strategy.field_dsj_timeline_roadmap
+    - field.field.node.dsj_strategy.field_dsj_type_of_initiative
+    - field.field.node.dsj_strategy.field_dsj_website_link
     - image.style.thumbnail
-    - node.type.dsj_strategies
+    - node.type.dsj_strategy
   module:
-    - comment
     - datetime
     - file
     - image
     - path
     - text
     - typed_link
-_core:
-  default_config_hash: h3ru1mSev1EvMgPC7VRSaT7VQ30-JNZ4-iaarOhLQno
-id: node.dsj_strategies.default
+id: node.dsj_strategy.default
 targetEntityType: node
-bundle: dsj_strategies
+bundle: dsj_strategy
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 121
     settings:
       rows: 9
       summary_rows: 3
@@ -51,12 +47,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_dsj_author:
-    weight: 12
+    weight: 122
     settings:
       size: 60
       placeholder: ''
@@ -64,33 +60,27 @@ content:
     type: string_textfield
     region: content
   field_dsj_budget:
-    weight: 13
+    weight: 123
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_dsj_comments:
-    weight: 14
-    settings: {  }
-    third_party_settings: {  }
-    type: comment_default
-    region: content
   field_dsj_digital_skill_level:
-    weight: 14
+    weight: 125
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_digital_technology:
-    weight: 16
+    weight: 126
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_file_for_download:
-    weight: 28
+    weight: 127
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
@@ -103,7 +93,7 @@ content:
     type: options_select
     region: content
   field_dsj_image:
-    weight: 2
+    weight: 129
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -111,19 +101,19 @@ content:
     type: image_image
     region: content
   field_dsj_industry:
-    weight: 18
+    weight: 130
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_latest_update_strategy:
-    weight: 26
+    weight: 131
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_dsj_organization:
-    weight: 19
+    weight: 132
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -132,8 +122,15 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_dsj_publish_in_core:
+    weight: 133
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_dsj_stakeholder:
-    weight: 25
+    weight: 134
     settings:
       size: 60
       placeholder: ''
@@ -141,15 +138,15 @@ content:
     type: string_textfield
     region: content
   field_dsj_strategy_state_of_play:
-    weight: 20
+    weight: 135
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textarea
     region: content
   field_dsj_target_audience:
-    weight: 23
+    weight: 136
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -161,30 +158,37 @@ content:
     type: options_select
     region: content
   field_dsj_timeline_roadmap:
-    weight: 23
+    weight: 138
     settings:
-      rows: 5
+      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
+    type: string_textfield
     region: content
   field_dsj_type_of_initiative:
-    weight: 27
+    weight: 139
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_website_link:
-    weight: 24
+    weight: 140
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: typed_link
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
-    weight: 9
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -192,39 +196,34 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 15
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 120
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 16
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  translation:
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -232,5 +231,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_dsj_publish_in_core: true
+hidden: {  }
