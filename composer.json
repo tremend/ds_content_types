@@ -4,5 +4,8 @@
     "description": "This project provides the EDSJP content types.",
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "drupal/typed_link": "^1.1",
+        "drupal/field_group": "^3.1"
+    }
 }

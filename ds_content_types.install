@@ -1,0 +1,59 @@
+<?php
+
+/**
+ * @file
+ * Install hooks for the ds_content_types module.
+ */
+
+use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
+use Drupal\node\NodeTypeInterface;
+
+/**
+ * Implements hook_install().
+ */
+function ds_content_types_install() {
+  // Reset schema version in order to run the update hook so that all the
+  // content related to Article and Basic page content types will be deleted.
+  drupal_set_installed_schema_version('ds_content_types', '8000');
+}
+
+/**
+ * Removes the Article and Basic Page content types if available.
+ */
+function ds_content_types_update_8001(&$sandbox) {
+  // Calculate the total nodes to remove.
+  if (!isset($sandbox['total'])) {
+    $nodes = \Drupal::entityQuery('node')
+    ->condition('type', ['article', 'page'], 'IN')
+    ->execute();
+    $sandbox['current'] = 0;
+    $sandbox['total'] = count($nodes);
+  }
+  // Remove nodes in batches of 25.
+  if (!empty($sandbox['total'])) {
+    $nids = \Drupal::entityQuery('node')
+      ->condition('type', ['article', 'page'], 'IN')
+      ->range(0, 25)
+      ->execute();
+    if (!empty($nids)) {
+      foreach ($nids as $nid) {
+        $node = Node::load($nid);
+        if ($node instanceof NodeInterface) {
+          $node->delete();
+        }
+        $sandbox['current']++;
+      }
+    }
+  }
+  $sandbox['#finished'] = $sandbox['current'] >= $sandbox['total'] ? 1 : ($sandbox['current'] / $sandbox['total']);
+  // Remove the content types if the batch is complete.
+  if ($sandbox['#finished'] == 1) {
+    foreach (['article', 'page'] as $type) {
+      $content_type = \Drupal::entityTypeManager()->getStorage('node_type')->load($type);
+      if ($content_type instanceof NodeTypeInterface) {
+        $content_type->delete();
+      }
+    }
+  }
+}
