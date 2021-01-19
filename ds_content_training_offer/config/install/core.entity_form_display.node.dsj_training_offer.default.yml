@@ -4,8 +4,6 @@ dependencies:
   config:
     - field.field.node.dsj_training_offer.body
     - field.field.node.dsj_training_offer.field_dsj_author
-    - field.field.node.dsj_training_offer.field_dsj_comments
-    - field.field.node.dsj_training_offer.field_dsj_cost_of_training
     - field.field.node.dsj_training_offer.field_dsj_credential_offered
     - field.field.node.dsj_training_offer.field_dsj_digital_skill_level
     - field.field.node.dsj_training_offer.field_dsj_digital_technology
@@ -30,7 +28,6 @@ dependencies:
     - image.style.thumbnail
     - node.type.dsj_training_offer
   module:
-    - comment
     - datetime
     - image
     - path
@@ -67,19 +64,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_dsj_comments:
-    weight: 16
-    settings: {  }
-    third_party_settings: {  }
-    type: comment_default
-    region: content
-  field_dsj_cost_of_training:
-    type: number
-    weight: 25
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
   field_dsj_credential_offered:
     weight: 37
     settings: {  }
@@ -202,11 +186,9 @@ content:
     region: content
   field_dsj_type_of_training:
     weight: 20
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_select
     region: content
   field_dsj_typology_of_training:
     weight: 40
