@@ -19,49 +19,9 @@ function ds_content_types_install() {
 }
 
 /**
- * Removes the Article and Basic Page content types if available.
- */
-function ds_content_types_update_8001(&$sandbox) {
-  // Calculate the total nodes to remove.
-  if (!isset($sandbox['total'])) {
-    $nodes = \Drupal::entityQuery('node')
-    ->condition('type', ['article', 'page'], 'IN')
-    ->execute();
-    $sandbox['current'] = 0;
-    $sandbox['total'] = count($nodes);
-  }
-  // Remove nodes in batches of 25.
-  if (!empty($sandbox['total'])) {
-    $nids = \Drupal::entityQuery('node')
-      ->condition('type', ['article', 'page'], 'IN')
-      ->range(0, 25)
-      ->execute();
-    if (!empty($nids)) {
-      foreach ($nids as $nid) {
-        $node = Node::load($nid);
-        if ($node instanceof NodeInterface) {
-          $node->delete();
-        }
-        $sandbox['current']++;
-      }
-    }
-  }
-  $sandbox['#finished'] = $sandbox['current'] >= $sandbox['total'] ? 1 : ($sandbox['current'] / $sandbox['total']);
-  // Remove the content types if the batch is complete.
-  if ($sandbox['#finished'] == 1) {
-    foreach (['article', 'page'] as $type) {
-      $content_type = \Drupal::entityTypeManager()->getStorage('node_type')->load($type);
-      if ($content_type instanceof NodeTypeInterface) {
-        $content_type->delete();
-      }
-    }
-  }
-}
-
-/**
  * Update jsonapi_extras configuration.
  */
-function ds_content_types_update_8002() {
+function ds_content_types_update_8001() {
   $config_factory = \Drupal::configFactory();
   $jsonapi_config = $config_factory->getEditable('jsonapi_extras.settings');
   $jsonapi_config->set('include_count', TRUE);
