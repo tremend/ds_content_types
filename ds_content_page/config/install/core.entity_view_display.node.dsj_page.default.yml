@@ -2,16 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.dsj_comment.default
     - field.field.node.dsj_page.body
     - field.field.node.dsj_page.field_dsj_author
-    - field.field.node.dsj_page.field_dsj_comments
     - field.field.node.dsj_page.field_dsj_image
     - field.field.node.dsj_page.field_dsj_publish_in_core
     - field.field.node.dsj_page.field_dsj_website_link
     - node.type.dsj_page
   module:
-    - comment
     - image
     - text
     - typed_link
@@ -27,15 +24,6 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_dsj_comments:
-    weight: 6
-    label: hidden
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    type: comment_default
     region: content
   field_dsj_image:
     weight: 2
