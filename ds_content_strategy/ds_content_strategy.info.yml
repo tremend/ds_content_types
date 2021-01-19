@@ -1,6 +1,6 @@
-name: edsjp_content_strategies
+name: edsjp_content_strategy
 type: module
-description: Custom module containing the Strategies content type.
+description: Custom module containing the Strategy content type.
 package: Custom
 core: 8.x
 php: 7.3
