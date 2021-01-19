@@ -2,10 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.dsj_comment.default
     - field.field.node.dsj_organization.body
     - field.field.node.dsj_organization.field_dsj_author
-    - field.field.node.dsj_organization.field_dsj_comments
     - field.field.node.dsj_organization.field_dsj_digital_skill_level
     - field.field.node.dsj_organization.field_dsj_digital_technology
     - field.field.node.dsj_organization.field_dsj_geographic_scope
@@ -19,7 +17,6 @@ dependencies:
     - field.field.node.dsj_organization.field_dsj_website_link
     - node.type.dsj_organization
   module:
-    - comment
     - field_group
     - image
     - options
@@ -63,15 +60,6 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_dsj_comments:
-    weight: 10
-    label: above
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    type: comment_default
     region: content
   field_dsj_digital_skill_level:
     weight: 10

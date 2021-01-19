@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.node.dsj_good_practice.body
     - field.field.node.dsj_good_practice.field_dsj_author
-    - field.field.node.dsj_good_practice.field_dsj_comments
     - field.field.node.dsj_good_practice.field_dsj_date
     - field.field.node.dsj_good_practice.field_dsj_digital_skill_level
     - field.field.node.dsj_good_practice.field_dsj_digital_technology
@@ -24,7 +23,6 @@ dependencies:
     - image.style.thumbnail
     - node.type.dsj_good_practice
   module:
-    - comment
     - datetime_range
     - file
     - image
@@ -59,12 +57,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_dsj_comments:
-    weight: 20
-    settings: {  }
-    third_party_settings: {  }
-    type: comment_default
     region: content
   field_dsj_date:
     weight: 10
