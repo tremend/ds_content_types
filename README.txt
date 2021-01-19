@@ -5,7 +5,13 @@ composer require drupal/typed_link
 2. Drupal - FieldGroup(https://www.drupal.org/project/field_group)
 composer require drupal/field_group
 
-Also, make sure to run the updates after enabling the module in order to delete the Article and Basic page content type.
+3. Drupal - JsonAPI Extras(https://www.drupal.org/project/jsonapi_extras)
+composer require drupal/jsonapi_extras
+
+4. Drupal - JsonAPI Include(https://www.drupal.org/project/jsonapi_include)
+composer require drupal/jsonapi_include
+
+Also, make sure to run the updates after enabling the module in order to delete the Article and Basic page content type and update the jsonapi settings.
 
 The main module contains a submodule for each content type available. Those content types are:
 1. Article

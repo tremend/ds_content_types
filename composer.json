@@ -6,6 +6,8 @@
     "minimum-stability": "dev",
     "require": {
         "drupal/typed_link": "^1.1",
-        "drupal/field_group": "^3.1"
+        "drupal/field_group": "^3.1",
+        "drupal/jsonapi_extras": "^3.16",
+        "drupal/jsonapi_include": "^1.4"
     }
 }

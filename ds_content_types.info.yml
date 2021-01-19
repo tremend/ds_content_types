@@ -10,4 +10,6 @@ dependencies:
   - 'drupal:datetime_range'
   - 'drupal:field_group'
   - 'drupal:jsonapi'
+  - 'drupal:jsonapi_extras'
+  - 'drupal:jsonapi_include'
   - 'drupal:typed_link'

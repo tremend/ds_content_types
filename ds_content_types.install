@@ -57,3 +57,13 @@ function ds_content_types_update_8001(&$sandbox) {
     }
   }
 }
+
+/**
+ * Update jsonapi_extras configuration.
+ */
+function ds_content_types_update_8002() {
+  $config_factory = \Drupal::configFactory();
+  $jsonapi_config = $config_factory->getEditable('jsonapi_extras.settings');
+  $jsonapi_config->set('include_count', TRUE);
+  $jsonapi_config->save();
+}
