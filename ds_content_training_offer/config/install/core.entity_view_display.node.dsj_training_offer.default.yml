@@ -2,11 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.dsj_comment.default
     - field.field.node.dsj_training_offer.body
     - field.field.node.dsj_training_offer.field_dsj_author
-    - field.field.node.dsj_training_offer.field_dsj_comments
-    - field.field.node.dsj_training_offer.field_dsj_cost_of_training
     - field.field.node.dsj_training_offer.field_dsj_credential_offered
     - field.field.node.dsj_training_offer.field_dsj_digital_skill_level
     - field.field.node.dsj_training_offer.field_dsj_digital_technology
@@ -30,7 +27,6 @@ dependencies:
     - field.field.node.dsj_training_offer.field_dsj_website_link
     - node.type.dsj_training_offer
   module:
-    - comment
     - datetime
     - field_group
     - image
@@ -42,7 +38,6 @@ third_party_settings:
   field_group:
     group_offer_details:
       children:
-        - field_dsj_cost_of_training
         - field_dsj_type_of_training
         - field_dsj_geographic_scope
         - field_dsj_website_link
@@ -87,24 +82,6 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_dsj_comments:
-    type: comment_default
-    weight: 5
-    region: content
-    label: hidden
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-  field_dsj_cost_of_training:
-    weight: 4
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
     region: content
   field_dsj_credential_offered:
     weight: 27
@@ -234,12 +211,11 @@ content:
     type: list_default
     region: content
   field_dsj_type_of_training:
-    weight: 6
+    weight: 24
     label: inline
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: list_default
     region: content
   field_dsj_typology_of_training:
     weight: 11

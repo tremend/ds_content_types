@@ -2,10 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.dsj_comment.default
     - field.field.node.dsj_good_practice.body
     - field.field.node.dsj_good_practice.field_dsj_author
-    - field.field.node.dsj_good_practice.field_dsj_comments
     - field.field.node.dsj_good_practice.field_dsj_date
     - field.field.node.dsj_good_practice.field_dsj_digital_skill_level
     - field.field.node.dsj_good_practice.field_dsj_digital_technology
@@ -24,7 +22,6 @@ dependencies:
     - field.field.node.dsj_good_practice.field_dsj_website_link
     - node.type.dsj_good_practice
   module:
-    - comment
     - datetime_range
     - field_group
     - file
@@ -75,15 +72,6 @@ content:
     weight: 4
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_dsj_comments:
-    weight: 12
-    label: above
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    type: comment_default
     region: content
   field_dsj_date:
     weight: 2

@@ -4,14 +4,12 @@ dependencies:
   config:
     - field.field.node.dsj_page.body
     - field.field.node.dsj_page.field_dsj_author
-    - field.field.node.dsj_page.field_dsj_comments
     - field.field.node.dsj_page.field_dsj_image
     - field.field.node.dsj_page.field_dsj_publish_in_core
     - field.field.node.dsj_page.field_dsj_website_link
     - image.style.thumbnail
     - node.type.dsj_page
   module:
-    - comment
     - image
     - path
     - text
@@ -44,12 +42,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_dsj_comments:
-    weight: 14
-    settings: {  }
-    third_party_settings: {  }
-    type: comment_default
     region: content
   field_dsj_image:
     weight: 2

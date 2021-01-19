@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.node.dsj_article.body
     - field.field.node.dsj_article.field_dsj_author
-    - field.field.node.dsj_article.field_dsj_comments
     - field.field.node.dsj_article.field_dsj_digital_skill_level
     - field.field.node.dsj_article.field_dsj_digital_technology
     - field.field.node.dsj_article.field_dsj_geographic_scope
@@ -15,7 +14,6 @@ dependencies:
     - image.style.thumbnail
     - node.type.dsj_article
   module:
-    - comment
     - image
     - path
     - text
@@ -50,12 +48,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_dsj_comments:
-    weight: 15
-    settings: {  }
-    third_party_settings: {  }
-    type: comment_default
     region: content
   field_dsj_digital_skill_level:
     weight: 17

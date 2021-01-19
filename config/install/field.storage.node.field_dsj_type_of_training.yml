@@ -3,15 +3,21 @@ status: true
 dependencies:
   module:
     - node
+    - options
 id: node.field_dsj_type_of_training
 field_name: field_dsj_type_of_training
 entity_type: node
-type: string
+type: list_string
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  allowed_values:
+    -
+      value: single_offer
+      label: 'Single offer'
+    -
+      value: database
+      label: Database
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

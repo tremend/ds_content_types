@@ -1,13 +1,7 @@
 langcode: en
 status: true
-dependencies:
-  module:
-    - menu_ui
-third_party_settings:
-  menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+dependencies: {  }
+third_party_settings: {  }
 name: 'Digital Skills Resources'
 type: dsj_digital_skills_resources
 description: ''

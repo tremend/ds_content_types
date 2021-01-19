@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Install hooks for the ds_content_types module.
+ */
+
+use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
+use Drupal\node\NodeTypeInterface;
+
+/**
+ * Implements hook_install().
+ */
+function ds_content_types_install() {
+  // Reset schema version in order to run the update hook so that all the
+  // content related to Article and Basic page content types will be deleted.
+  drupal_set_installed_schema_version('ds_content_types', '8000');
+}
+
+/**
+ * Update jsonapi_extras configuration.
+ */
+function ds_content_types_update_8001() {
+  $config_factory = \Drupal::configFactory();
+  $jsonapi_config = $config_factory->getEditable('jsonapi_extras.settings');
+  $jsonapi_config->set('include_count', TRUE);
+  $jsonapi_config->save();
+}
