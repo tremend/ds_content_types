@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 third_party_settings: {  }
-name: 'Training Offer'
+name: 'Training offer'
 type: dsj_training_offer
 description: ''
 help: ''

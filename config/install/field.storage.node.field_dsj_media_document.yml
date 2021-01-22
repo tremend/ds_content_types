@@ -4,8 +4,8 @@ dependencies:
   module:
     - file
     - node
-id: node.field_dsj_media_documents
-field_name: field_dsj_media_documents
+id: node.field_dsj_media_document
+field_name: field_dsj_media_document
 entity_type: node
 type: file
 settings:

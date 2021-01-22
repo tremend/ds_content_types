@@ -14,7 +14,7 @@ dependencies:
     - field.field.node.dsj_digital_skills_resource.field_dsj_organization
     - field.field.node.dsj_digital_skills_resource.field_dsj_publish_in_core
     - field.field.node.dsj_digital_skills_resource.field_dsj_skills_resource_type
-    - field.field.node.dsj_digital_skills_resource.field_dsj_supporting_documents
+    - field.field.node.dsj_digital_skills_resource.field_dsj_supporting_document
     - field.field.node.dsj_digital_skills_resource.field_dsj_target_audience
     - field.field.node.dsj_digital_skills_resource.field_dsj_target_group
     - field.field.node.dsj_digital_skills_resource.field_dsj_target_language
@@ -123,7 +123,7 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_dsj_supporting_documents:
+  field_dsj_supporting_document:
     weight: 22
     settings:
       progress_indicator: throbber

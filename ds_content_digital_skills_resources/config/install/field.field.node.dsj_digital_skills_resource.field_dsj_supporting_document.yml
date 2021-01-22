@@ -2,12 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_dsj_supporting_documents
+    - field.storage.node.field_dsj_supporting_document
     - node.type.dsj_digital_skills_resource
   module:
     - file
-id: node.dsj_digital_skills_resource.field_dsj_supporting_documents
-field_name: field_dsj_supporting_documents
+id: node.dsj_digital_skills_resource.field_dsj_supporting_document
+field_name: field_dsj_supporting_document
 entity_type: node
 bundle: dsj_digital_skills_resource
 label: 'Supporting documents'

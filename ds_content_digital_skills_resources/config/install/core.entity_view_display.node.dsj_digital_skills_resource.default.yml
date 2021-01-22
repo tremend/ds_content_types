@@ -14,7 +14,7 @@ dependencies:
     - field.field.node.dsj_digital_skills_resource.field_dsj_organization
     - field.field.node.dsj_digital_skills_resource.field_dsj_publish_in_core
     - field.field.node.dsj_digital_skills_resource.field_dsj_skills_resource_type
-    - field.field.node.dsj_digital_skills_resource.field_dsj_supporting_documents
+    - field.field.node.dsj_digital_skills_resource.field_dsj_supporting_document
     - field.field.node.dsj_digital_skills_resource.field_dsj_target_audience
     - field.field.node.dsj_digital_skills_resource.field_dsj_target_group
     - field.field.node.dsj_digital_skills_resource.field_dsj_target_language
@@ -42,7 +42,7 @@ third_party_settings:
         - field_dsj_methodology
         - field_dsj_organization
         - field_dsj_skills_resource_type
-        - field_dsj_supporting_documents
+        - field_dsj_supporting_document
         - field_dsj_target_audience
         - field_dsj_target_group
         - field_dsj_target_language
@@ -143,7 +143,7 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
-  field_dsj_supporting_documents:
+  field_dsj_supporting_document:
     weight: 11
     label: inline
     settings:

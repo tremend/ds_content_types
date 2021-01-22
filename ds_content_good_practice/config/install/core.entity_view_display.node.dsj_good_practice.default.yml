@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.dsj_good_practice.field_dsj_image
     - field.field.node.dsj_good_practice.field_dsj_industry
     - field.field.node.dsj_good_practice.field_dsj_media_audio
-    - field.field.node.dsj_good_practice.field_dsj_media_documents
+    - field.field.node.dsj_good_practice.field_dsj_media_document
     - field.field.node.dsj_good_practice.field_dsj_media_image
     - field.field.node.dsj_good_practice.field_dsj_media_video
     - field.field.node.dsj_good_practice.field_dsj_organization
@@ -38,7 +38,7 @@ third_party_settings:
         - field_dsj_geographic_scope
         - field_dsj_website_link
         - field_dsj_industry
-        - field_dsj_media_documents
+        - field_dsj_media_document
         - field_dsj_media_audio
         - field_dsj_media_video
         - field_dsj_media_image
@@ -122,7 +122,7 @@ content:
     third_party_settings: {  }
     type: file_default
     region: content
-  field_dsj_media_documents:
+  field_dsj_media_document:
     weight: 10
     label: inline
     settings:

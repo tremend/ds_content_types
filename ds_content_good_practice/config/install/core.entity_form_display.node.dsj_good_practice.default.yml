@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.dsj_good_practice.field_dsj_image
     - field.field.node.dsj_good_practice.field_dsj_industry
     - field.field.node.dsj_good_practice.field_dsj_media_audio
-    - field.field.node.dsj_good_practice.field_dsj_media_documents
+    - field.field.node.dsj_good_practice.field_dsj_media_document
     - field.field.node.dsj_good_practice.field_dsj_media_image
     - field.field.node.dsj_good_practice.field_dsj_media_video
     - field.field.node.dsj_good_practice.field_dsj_organization
@@ -103,7 +103,7 @@ content:
     third_party_settings: {  }
     type: file_generic
     region: content
-  field_dsj_media_documents:
+  field_dsj_media_document:
     weight: 27
     settings:
       progress_indicator: throbber

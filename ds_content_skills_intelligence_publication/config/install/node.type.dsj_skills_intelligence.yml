@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 third_party_settings: {  }
-name: 'Skills Intelligence Publication'
+name: 'Skills intelligence publication'
 type: dsj_skills_intelligence
 description: ''
 help: ''

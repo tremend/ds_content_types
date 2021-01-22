@@ -4,10 +4,10 @@ dependencies:
   config:
     - field.field.node.dsj_funding_opportunity.body
     - field.field.node.dsj_funding_opportunity.field_dsj_author
-    - field.field.node.dsj_funding_opportunity.field_dsj_beneficiaries
+    - field.field.node.dsj_funding_opportunity.field_dsj_beneficiary
     - field.field.node.dsj_funding_opportunity.field_dsj_digital_skill_level
     - field.field.node.dsj_funding_opportunity.field_dsj_digital_technology
-    - field.field.node.dsj_funding_opportunity.field_dsj_financing_conditions
+    - field.field.node.dsj_funding_opportunity.field_dsj_financing_condition
     - field.field.node.dsj_funding_opportunity.field_dsj_financing_intermediary
     - field.field.node.dsj_funding_opportunity.field_dsj_form_of_funding
     - field.field.node.dsj_funding_opportunity.field_dsj_geographic_scope
@@ -57,7 +57,7 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_dsj_beneficiaries:
+  field_dsj_beneficiary:
     weight: 11
     settings:
       size: 60
@@ -77,7 +77,7 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_dsj_financing_conditions:
+  field_dsj_financing_condition:
     weight: 12
     settings:
       size: 60
