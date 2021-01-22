@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 third_party_settings: {  }
-name: strategy
+name: Strategy
 type: dsj_strategy
 description: ''
 help: ''

@@ -5,6 +5,8 @@
  * Install hooks for the ds_content_types module.
  */
 
+use Drupal\field\Entity\FieldConfig;
+use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\node\Entity\Node;
 use Drupal\node\NodeInterface;
 use Drupal\node\NodeTypeInterface;
@@ -26,4 +28,226 @@ function ds_content_types_update_8001() {
   $jsonapi_config = $config_factory->getEditable('jsonapi_extras.settings');
   $jsonapi_config->set('include_count', TRUE);
   $jsonapi_config->save();
+}
+
+/**
+ * Update page content type default form and view displays.
+ */
+function ds_content_types_update_8002() {
+  \Drupal::entityTypeManager()->getStorage('entity_view_display')
+    ->load('node.page.default')
+    ->setComponent('field_dsj_author', [
+      'label' => 'inline',
+      'settings' => [
+        'link_to_entity' => FALSE,
+      ],
+      'third_party_settings' => [],
+      'type' => 'string',
+      'region' => 'content',
+      'weight' => 5,
+    ])
+    ->setComponent('field_dsj_image', [
+      'label' => 'hidden',
+      'settings' => [
+        'image_style' => '',
+        'image_link' => '',
+      ],
+      'third_party_settings' => [],
+      'type' => 'image',
+      'region' => 'content',
+      'weight' => -1,
+    ])
+    ->setComponent('field_dsj_website_link', [
+      'label' => 'inline',
+      'settings' => [
+        'trim_length' => 80,
+        'url_only' => FALSE,
+        'url_plain' => FALSE,
+        'rel' => '',
+        'target' => '',
+      ],
+      'third_party_settings' => [],
+      'type' => 'typed_link',
+      'region' => 'content',
+      'weight' => 10,
+    ])
+    ->save();
+  \Drupal::entityTypeManager()->getStorage('entity_form_display')
+    ->load('node.page.default')
+    ->setComponent('field_dsj_author', [
+      'weight' => 13,
+      'settings' => [
+        'size' => 60,
+        'placeholder' => '',
+      ],
+      'third_party_settings' => [],
+      'type' => 'string_textfield',
+      'region' => 'content',
+    ])
+    ->setComponent('field_dsj_image', [
+      'weight' => 2,
+      'settings' => [
+        'progress_indicator' => 'throbber',
+        'preview_image_style' => 'thumbnail',
+      ],
+      'third_party_settings' => [],
+      'type' => 'image_image',
+      'region' => 'content',
+    ])
+    ->setComponent('field_dsj_website_link', [
+      'weight' => 12,
+      'settings' => [
+        'placeholder_url' => '',
+        'placeholder_title' => '',
+      ],
+      'third_party_settings' => [],
+      'type' => 'typed_link',
+      'region' => 'content',
+    ])->save();
+}
+
+/**
+ * Update article content type default form and view displays.
+ */
+function ds_content_types_update_8003() {
+  \Drupal::entityTypeManager()->getStorage('entity_view_display')
+    ->load('node.article.default')
+    ->setComponent('field_dsj_author', [
+      'label' => 'inline',
+      'settings' => [
+        'link_to_entity' => FALSE,
+      ],
+      'third_party_settings' => [],
+      'type' => 'string',
+      'region' => 'content',
+      'weight' => 5,
+    ])
+    ->setComponent('field_dsj_digital_skill_level', [
+      'label' => 'inline',
+      'settings' => [],
+      'third_party_settings' => [],
+      'type' => 'list_default',
+      'region' => 'content',
+      'weight' => 9,
+    ])
+    ->setComponent('field_dsj_digital_technology', [
+      'label' => 'inline',
+      'settings' => [],
+      'third_party_settings' => [],
+      'type' => 'list_default',
+      'region' => 'content',
+      'weight' => 9,
+    ])
+    ->setComponent('field_dsj_geographic_scope', [
+      'label' => 'inline',
+      'settings' => [],
+      'third_party_settings' => [],
+      'type' => 'list_default',
+      'region' => 'content',
+      'weight' => 9,
+    ])
+    ->setComponent('field_dsj_image', [
+      'label' => 'hidden',
+      'settings' => [
+        'image_style' => '',
+        'image_link' => '',
+      ],
+      'third_party_settings' => [],
+      'type' => 'image',
+      'region' => 'content',
+      'weight' => -1,
+    ])
+    ->setComponent('field_dsj_type_of_initiative', [
+      'label' => 'inline',
+      'settings' => [],
+      'third_party_settings' => [],
+      'type' => 'list_default',
+      'region' => 'content',
+      'weight' => 9,
+    ])
+    ->setComponent('field_dsj_website_link', [
+      'label' => 'inline',
+      'settings' => [
+        'trim_length' => 80,
+        'url_only' => FALSE,
+        'url_plain' => FALSE,
+        'rel' => '',
+        'target' => '',
+      ],
+      'third_party_settings' => [],
+      'type' => 'typed_link',
+      'region' => 'content',
+      'weight' => 10,
+    ])
+    ->save();
+  \Drupal::entityTypeManager()->getStorage('entity_form_display')
+    ->load('node.article.default')
+    ->setComponent('field_dsj_author', [
+      'weight' => 14,
+      'settings' => [
+        'size' => 60,
+        'placeholder' => '',
+      ],
+      'third_party_settings' => [],
+      'type' => 'string_textfield',
+      'region' => 'content',
+    ])
+    ->setComponent('field_dsj_digital_skill_level', [
+      'weight' => 17,
+      'settings' => [],
+      'third_party_settings' => [],
+      'type' => 'options_select',
+      'region' => 'content',
+    ])
+    ->setComponent('field_dsj_digital_technology', [
+      'weight' => 17,
+      'settings' => [],
+      'third_party_settings' => [],
+      'type' => 'options_select',
+      'region' => 'content',
+    ])
+    ->setComponent('field_dsj_geographic_scope', [
+      'weight' => 17,
+      'settings' => [],
+      'third_party_settings' => [],
+      'type' => 'options_select',
+      'region' => 'content',
+    ])
+    ->setComponent('field_dsj_image', [
+      'label' => 'hidden',
+      'settings' => [
+        'progress_indicator' => 'throbber',
+        'preview_image_style' => 'thumbnail',
+      ],
+      'third_party_settings' => [],
+      'type' => 'image_image',
+      'region' => 'content',
+      'weight' => 2,
+    ])
+    ->setComponent('field_dsj_type_of_initiative', [
+      'weight' => 17,
+      'settings' => [],
+      'third_party_settings' => [],
+      'type' => 'options_select',
+      'region' => 'content',
+    ])
+    ->setComponent('field_dsj_website_link', [
+      'weight' => 12,
+      'settings' => [
+        'placeholder_url' => '',
+        'placeholder_title' => '',
+      ],
+      'third_party_settings' => [],
+      'type' => 'typed_link',
+      'region' => 'content',
+    ])->save();
+}
+
+/**
+ * Remove unneeded article fields.
+ */
+function ds_content_types_update_8004() {
+  FieldStorageConfig::loadByName('node', 'comment')->delete();
+  FieldStorageConfig::loadByName('node', 'field_image')->delete();
+  FieldStorageConfig::loadByName('node', 'field_tags')->delete();
 }

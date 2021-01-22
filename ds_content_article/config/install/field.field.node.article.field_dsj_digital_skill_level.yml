@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsj_digital_skill_level
+    - node.type.article
+  module:
+    - options
+id: node.article.field_dsj_digital_skill_level
+field_name: field_dsj_digital_skill_level
+entity_type: node
+bundle: article
+label: 'Digital skill level'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
