@@ -27,8 +27,6 @@ The main module contains a submodule for each content type available. Those cont
 10. Strategy
 11. Training offer
 
-Also, make sure to run the updates after enabling the module in order to update Article and Basic page content types and update the jsonapi settings.
-
 Each content type will be installed with a set of fields, as follows:
 Common fields:
 1. Article
