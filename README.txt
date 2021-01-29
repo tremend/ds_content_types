@@ -11,8 +11,6 @@ composer require drupal/jsonapi_extras
 4. Drupal - JsonAPI Include(https://www.drupal.org/project/jsonapi_include)
 composer require drupal/jsonapi_include
 
-Also, make sure to run the updates after enabling the module in order to delete the Article and Basic page content type and update the jsonapi settings.
-
 The main module contains a submodule for each content type available. Those content types are:
 1. Article
 2. Digital Skills Resources
@@ -26,24 +24,26 @@ The main module contains a submodule for each content type available. Those cont
 10. Strategy
 11. Training offer
 
+Also, make sure to run the updates after enabling the module in order to update Article and Basic page content types and update the jsonapi settings.
+
 Each content type will be installed with a set of fields, as follows:
 Common fields:
 1. Article
     1.1. Body
     1.2. Author
-    1.3. Digital Skill Level
-    1.4. Digital Technology
-    1.5. Geographic Scope - Country
+    1.3. Digital skill level
+    1.4. Digital technology
+    1.5. Geographic scope - Country
     1.6. Image
     1.7. Publish in core platform
     1.8. Type of initiative
-    1.9. Website Link
+    1.9. Website link
 2. Digital Skills resources
     2.1. Body
     2.2. Author
-    2.3. Digital Skill Level
-    2.4. Digital Technology
-    2.5. Geographic Scope - Country
+    2.3. Digital skill level
+    2.4. Digital technology
+    2.5. Geographic scope - Country
     2.6. Image
     2.7. Industry
     2.8. Main document file for download
@@ -51,20 +51,20 @@ Common fields:
     2.10. Organization
     2.11. Publish in core platform
     2.12. Skills resource type
-    2.13. Supporting Documents
+    2.13. Supporting documents
     2.14. Target audience
     2.15. Target group
     2.16. Target language
     2.17. Topology of competence
     2.18. Type of initiative
-    2.19. Website Link
+    2.19. Website link
 3. Event
     3.1. Body
     3.2. Author
     3.3. Date
-    3.4. Digital Skill Level
-    3.5. Digital Technology
-    3.6. Geographic Scope - Country
+    3.4. Digital skill level
+    3.5. Digital technology
+    3.6. Geographic scope - Country
     3.7. Image
     3.8. Industry
     3.9. Publish in core platform
@@ -76,20 +76,20 @@ Common fields:
     4.1. Body
     4.2. Author
     4.3. Beneficiaries
-    4.4. Digital Skill Level
-    4.5. Digital Technology
+    4.4. Digital skill level
+    4.5. Digital technology
     4.6. Financing Conditions
     4.7. Financing Intermediary
-    4.8. Form of Funding
-    4.9. Geographic Scope - Country
+    4.8. Form of funding
+    4.9. Geographic scope - Country
     4.10. Image
     4.11. Industry
     4.12. Publish in core platform
     4.13. Target audience
-    4.14. Target Group
-    4.15. Type of Initiative
+    4.14. Target group
+    4.15. Type of initiative
     4.16. Type of loan
-    4.17. Website Link
+    4.17. Website link
 5. Good Practice
     5.1. Body
     5.2. Media field - still image
@@ -98,9 +98,9 @@ Common fields:
     5.5. Media field - document
     5.6. Author
     5.7. Date
-    5.8. Digital Skill Level
-    5.9. Digital Technology
-    5.10. Geographic Scope - Country
+    5.8. Digital skill level
+    5.9. Digital technology
+    5.10. Geographic scope - Country
     5.11. Image
     5.12. Industry
     5.13. Organization
@@ -113,8 +113,8 @@ Common fields:
     6.1. Body
     6.2. Author
     6.3. Digital skill level
-    6.4. Digital Technology
-    6.5. Geographic Scope - Country
+    6.4. Digital technology
+    6.5. Geographic scope - Country
     6.6. Image
     6.7. Industry
     6.8. Publish in core platform
@@ -126,7 +126,7 @@ Common fields:
     7.2. Author
     7.3. Digital skill level
     7.4. Digital technology
-    7.5. Geographic Scope - Country
+    7.5. Geographic scope - Country
     7.6. Image
     7.7. Industry
     7.8. NC member
@@ -146,7 +146,7 @@ Common fields:
     9.1. Body
     9.2. Author
     9.3. Digital skill level
-    9.4. Digital Technology
+    9.4. Digital technology
     9.5. Geographic scope - Country
     9.6. Image
     9.7. Industry
@@ -160,10 +160,10 @@ Common fields:
     10.1. Body
     10.2. Author
     10.3. Budget
-    10.4. Digital Skill Level
-    10.5. Digital Technology
+    10.4. Digital skill level
+    10.5. Digital technology
     10.6. File for download
-    10.7. Geographic Scope - Country
+    10.7. Geographic scope - Country
     10.8. Image
     10.9. Industry
     10.10. Latest update of the strategy
@@ -175,15 +175,15 @@ Common fields:
     10.16. Target language
     10.17. Timeline/roadmap
     10.18. Type of initiative
-    10.19. Website Link
+    10.19. Website link
 11. Training offer
     11.1. Body
     11.2. Author
     11.3. Credential offered
     11.4. Digital skill level
-    11.5. Digital Technology
+    11.5. Digital technology
     11.6. Effort
-    11.7. Geographic Scope - Country
+    11.7. Geographic scope - Country
     11.8. Image
     11.9. Industry
     11.10. Is the certificate\credential free

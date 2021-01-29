@@ -10,7 +10,7 @@ id: node.dsj_organization.field_dsj_website_link
 field_name: field_dsj_website_link
 entity_type: node
 bundle: dsj_organization
-label: 'Website Link'
+label: 'Website link'
 description: ''
 required: true
 translatable: false
