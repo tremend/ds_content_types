@@ -3,13 +3,12 @@ status: true
 dependencies:
   module:
     - node
-    - yearonly
-id: node.field_dsj_training_start_date
-field_name: field_dsj_training_start_date
+id: node.field_dsj_self_paced_course
+field_name: field_dsj_self_paced_course
 entity_type: node
-type: yearonly
+type: boolean
 settings: {  }
-module: yearonly
+module: core
 locked: false
 cardinality: 1
 translatable: true
