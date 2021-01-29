@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.node.dsj_organization.body
     - field.field.node.dsj_organization.field_dsj_author
-    - field.field.node.dsj_organization.field_dsj_digital_skill_level
     - field.field.node.dsj_organization.field_dsj_digital_technology
     - field.field.node.dsj_organization.field_dsj_geographic_scope
     - field.field.node.dsj_organization.field_dsj_image
@@ -13,7 +12,6 @@ dependencies:
     - field.field.node.dsj_organization.field_dsj_organization_category
     - field.field.node.dsj_organization.field_dsj_publish_in_core
     - field.field.node.dsj_organization.field_dsj_target_audience
-    - field.field.node.dsj_organization.field_dsj_type_of_initiative
     - field.field.node.dsj_organization.field_dsj_website_link
     - image.style.thumbnail
     - node.type.dsj_organization
@@ -41,32 +39,26 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_dsj_author:
-    weight: 16
+    weight: 9
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_dsj_digital_skill_level:
-    weight: 22
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_dsj_digital_technology:
-    weight: 17
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_geographic_scope:
-    weight: 26
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -80,38 +72,32 @@ content:
     type: image_image
     region: content
   field_dsj_industry:
-    weight: 20
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_nc_member:
-    weight: 18
+    weight: 15
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_dsj_organization_category:
-    weight: 23
+    weight: 16
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_target_audience:
-    weight: 21
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_dsj_type_of_initiative:
-    weight: 24
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_website_link:
-    weight: 15
+    weight: 10
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -120,7 +106,7 @@ content:
     region: content
   path:
     type: path
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -128,21 +114,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 8
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -160,7 +146,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
