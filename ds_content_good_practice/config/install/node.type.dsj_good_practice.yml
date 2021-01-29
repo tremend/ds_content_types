@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 third_party_settings: {  }
-name: 'Good Practice'
+name: 'Good practice'
 type: dsj_good_practice
 description: ''
 help: ''

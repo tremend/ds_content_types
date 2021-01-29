@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.dsj_training_offer.field_dsj_geographic_scope
     - field.field.node.dsj_training_offer.field_dsj_image
     - field.field.node.dsj_training_offer.field_dsj_industry
-    - field.field.node.dsj_training_offer.field_dsj_is_the_certificate
+    - field.field.node.dsj_training_offer.field_dsj_is_certificate_free
     - field.field.node.dsj_training_offer.field_dsj_is_this_course_free
     - field.field.node.dsj_training_offer.field_dsj_organization
     - field.field.node.dsj_training_offer.field_dsj_publish_in_core
@@ -108,7 +108,7 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_dsj_is_the_certificate:
+  field_dsj_is_certificate_free:
     weight: 21
     settings:
       display_label: true
