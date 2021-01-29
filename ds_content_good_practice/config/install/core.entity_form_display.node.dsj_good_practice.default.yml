@@ -46,12 +46,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_dsj_author:
-    weight: 18
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -59,25 +59,25 @@ content:
     type: string_textfield
     region: content
   field_dsj_date:
-    weight: 10
+    weight: 18
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
     region: content
   field_dsj_digital_skill_level:
-    weight: 24
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_digital_technology:
-    weight: 14
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_geographic_scope:
-    weight: 27
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -91,41 +91,41 @@ content:
     type: image_image
     region: content
   field_dsj_industry:
-    weight: 22
+    weight: 15
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_media_audio:
-    weight: 28
+    weight: 21
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_dsj_media_document:
-    weight: 27
+    weight: 20
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_dsj_media_image:
-    weight: 30
+    weight: 23
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_dsj_media_video:
-    weight: 29
+    weight: 22
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_dsj_organization:
-    weight: 12
+    weight: 19
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -135,7 +135,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_dsj_target_audience:
-    weight: 23
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -149,19 +149,19 @@ content:
     type: string_textfield
     region: content
   field_dsj_type_of_funding:
-    weight: 25
+    weight: 17
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_type_of_initiative:
-    weight: 26
+    weight: 16
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_website_link:
-    weight: 17
+    weight: 10
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -170,7 +170,7 @@ content:
     region: content
   path:
     type: path
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -178,21 +178,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 8
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -210,7 +210,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60

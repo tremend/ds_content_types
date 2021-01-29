@@ -78,12 +78,11 @@ content:
     third_party_settings: {  }
     region: content
   field_dsj_budget:
-    weight: 5
-    label: inline
-    settings:
-      link_to_entity: false
+    weight: 20
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: basic_string
     region: content
   field_dsj_digital_skill_level:
     weight: 6
@@ -108,7 +107,7 @@ content:
     type: file_default
     region: content
   field_dsj_geographic_scope:
-    weight: 18
+    weight: 8
     label: inline
     settings: {  }
     third_party_settings: {  }
@@ -170,7 +169,7 @@ content:
     type: list_default
     region: content
   field_dsj_target_language:
-    weight: 19
+    weight: 13
     label: inline
     settings: {  }
     third_party_settings: {  }

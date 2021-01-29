@@ -109,7 +109,7 @@ content:
     type: list_default
     region: content
   field_dsj_geographic_scope:
-    weight: 17
+    weight: 7
     label: inline
     settings: {  }
     third_party_settings: {  }

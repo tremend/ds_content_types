@@ -11,8 +11,8 @@ bundle: dsj_strategy
 label: Budget
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: string_long

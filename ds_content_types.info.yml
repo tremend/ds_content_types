@@ -13,3 +13,4 @@ dependencies:
   - 'drupal:jsonapi_extras'
   - 'drupal:jsonapi_include'
   - 'drupal:typed_link'
+  - 'drupal:yearonly'

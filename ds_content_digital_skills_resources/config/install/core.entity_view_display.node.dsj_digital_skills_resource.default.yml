@@ -72,7 +72,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -91,7 +91,7 @@ content:
     type: list_default
     region: content
   field_dsj_geographic_scope:
-    weight: 18
+    weight: 4
     label: inline
     settings: {  }
     third_party_settings: {  }
@@ -159,14 +159,14 @@ content:
     type: list_default
     region: content
   field_dsj_target_group:
-    weight: 19
+    weight: 13
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_target_language:
-    weight: 20
+    weight: 14
     label: inline
     settings: {  }
     third_party_settings: {  }
@@ -200,7 +200,7 @@ content:
     type: typed_link
     region: content
   links:
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
