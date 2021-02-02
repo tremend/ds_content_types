@@ -590,9 +590,6 @@ settings:
       value: 'http://publications.europa.eu/resource/authority/country/OMN'
       label: Oman
     -
-      value: 'http://publications.europa.eu/resource/authority/country/OP_DATPRO'
-      label: 'Provisional data'
-    -
       value: 'http://publications.europa.eu/resource/authority/country/PAK'
       label: Pakistan
     -

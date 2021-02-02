@@ -11,6 +11,9 @@ composer require drupal/jsonapi_extras
 4. Drupal - JsonAPI Include(https://www.drupal.org/project/jsonapi_include)
 composer require drupal/jsonapi_include
 
+5. Drupal - Year Only(https://www.drupal.org/project/yearonly)
+composer require drupal/yearonly
+
 The main module contains a submodule for each content type available. Those content types are:
 1. Article
 2. Digital Skills Resources
@@ -23,8 +26,6 @@ The main module contains a submodule for each content type available. Those cont
 9. Skills Intelligence Publication
 10. Strategy
 11. Training offer
-
-Also, make sure to run the updates after enabling the module in order to update Article and Basic page content types and update the jsonapi settings.
 
 Each content type will be installed with a set of fields, as follows:
 Common fields:
@@ -72,6 +73,8 @@ Common fields:
     3.11. Target language
     3.12. Type of initiative
     3.13. Website link
+    3.14. Event setting
+    3.15. Organization
 4. Funding Opportunity
     4.1. Body
     4.2. Author
@@ -112,15 +115,13 @@ Common fields:
 6. Initiative
     6.1. Body
     6.2. Author
-    6.3. Digital skill level
-    6.4. Digital technology
-    6.5. Geographic scope - Country
-    6.6. Image
-    6.7. Industry
-    6.8. Publish in core platform
-    6.9. Target audience
-    6.10. Type of initiative
-    6.111. Website link
+    6.3. Digital technology
+    6.4. Geographic scope - Country
+    6.5. Image
+    6.6. Industry
+    6.7. Publish in core platform
+    6.8. Target audience
+    6.9. Website link
 7. Organization
     7.1. Body
     7.2. Author
@@ -194,9 +195,11 @@ Common fields:
     11.15. Target group
     11.16. Target language
     11.17. Training duration
-    11.18. Training setting
+    11.18. Assessment type
     11.19. Training start date
     11.20. Type of initiative
     11.21. Type of training
     11.22. Typology of training
     11.23. Website link
+    11.24. Learning activity
+    11.25. Self pace course

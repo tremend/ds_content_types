@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.dsj_training_offer.body
+    - field.field.node.dsj_training_offer.field_dsj_assessment_type
     - field.field.node.dsj_training_offer.field_dsj_author
     - field.field.node.dsj_training_offer.field_dsj_credential_offered
     - field.field.node.dsj_training_offer.field_dsj_digital_skill_level
@@ -13,13 +14,14 @@ dependencies:
     - field.field.node.dsj_training_offer.field_dsj_industry
     - field.field.node.dsj_training_offer.field_dsj_is_certificate_free
     - field.field.node.dsj_training_offer.field_dsj_is_this_course_free
+    - field.field.node.dsj_training_offer.field_dsj_learning_activity
     - field.field.node.dsj_training_offer.field_dsj_organization
     - field.field.node.dsj_training_offer.field_dsj_publish_in_core
+    - field.field.node.dsj_training_offer.field_dsj_self_paced_course
     - field.field.node.dsj_training_offer.field_dsj_target_audience
     - field.field.node.dsj_training_offer.field_dsj_target_group
     - field.field.node.dsj_training_offer.field_dsj_target_language
     - field.field.node.dsj_training_offer.field_dsj_training_duration
-    - field.field.node.dsj_training_offer.field_dsj_training_setting
     - field.field.node.dsj_training_offer.field_dsj_training_start_date
     - field.field.node.dsj_training_offer.field_dsj_type_of_initiative
     - field.field.node.dsj_training_offer.field_dsj_type_of_training
@@ -44,7 +46,6 @@ third_party_settings:
         - field_dsj_target_language
         - field_dsj_target_group
         - field_dsj_typology_of_training
-        - field_dsj_training_setting
         - field_dsj_credential_offered
         - field_dsj_effort
         - field_dsj_is_certificate_free
@@ -53,9 +54,12 @@ third_party_settings:
         - field_dsj_training_start_date
         - field_dsj_industry
         - field_dsj_target_audience
+        - field_dsj_assessment_type
         - field_dsj_digital_skill_level
         - field_dsj_type_of_initiative
         - field_dsj_training_duration
+        - field_dsj_self_paced_course
+        - field_dsj_learning_activity
       parent_name: ''
       weight: 4
       format_type: html_element
@@ -83,29 +87,36 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_dsj_assessment_type:
+    weight: 38
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   field_dsj_credential_offered:
-    weight: 27
+    weight: 30
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_digital_skill_level:
-    weight: 21
+    weight: 39
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_effort:
-    weight: 28
+    weight: 31
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_geographic_scope:
-    weight: 7
+    weight: 25
     label: inline
     settings:
       link: true
@@ -122,7 +133,7 @@ content:
     type: image
     region: content
   field_dsj_industry:
-    weight: 20
+    weight: 36
     label: inline
     settings: {  }
     third_party_settings: {  }
@@ -130,7 +141,7 @@ content:
     region: content
   field_dsj_is_certificate_free:
     type: boolean
-    weight: 15
+    weight: 32
     region: content
     label: inline
     settings:
@@ -140,7 +151,7 @@ content:
     third_party_settings: {  }
   field_dsj_is_this_course_free:
     type: boolean
-    weight: 16
+    weight: 33
     region: content
     label: inline
     settings:
@@ -148,23 +159,40 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
+  field_dsj_learning_activity:
+    weight: 43
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   field_dsj_organization:
     type: entity_reference_label
-    weight: 17
+    weight: 34
     region: content
     label: inline
     settings:
       link: true
     third_party_settings: {  }
+  field_dsj_self_paced_course:
+    weight: 42
+    label: inline
+    settings:
+      format: yes-no
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_dsj_target_audience:
-    weight: 20
+    weight: 37
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_target_group:
-    weight: 10
+    weight: 28
     label: inline
     settings:
       link: true
@@ -172,7 +200,7 @@ content:
     type: list_default
     region: content
   field_dsj_target_language:
-    weight: 9
+    weight: 27
     label: inline
     settings:
       link: true
@@ -180,31 +208,21 @@ content:
     type: list_default
     region: content
   field_dsj_training_duration:
-    weight: 23
+    weight: 41
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
-  field_dsj_training_setting:
-    weight: 12
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_dsj_training_start_date:
-    type: datetime_default
-    weight: 19
+    type: yearonly_default
+    weight: 35
     region: content
     label: inline
-    settings:
-      format_type: medium
-      timezone_override: ''
+    settings: {  }
     third_party_settings: {  }
   field_dsj_type_of_initiative:
-    weight: 22
+    weight: 40
     label: inline
     settings: {  }
     third_party_settings: {  }
@@ -218,7 +236,7 @@ content:
     type: list_default
     region: content
   field_dsj_typology_of_training:
-    weight: 11
+    weight: 29
     label: inline
     settings:
       link: true
@@ -226,7 +244,7 @@ content:
     type: list_default
     region: content
   field_dsj_website_link:
-    weight: 8
+    weight: 26
     label: inline
     settings:
       trim_length: 80

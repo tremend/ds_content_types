@@ -37,7 +37,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 7
     settings:
       rows: 9
       summary_rows: 3
@@ -47,12 +47,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_dsj_author:
-    weight: 122
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -60,40 +60,40 @@ content:
     type: string_textfield
     region: content
   field_dsj_budget:
-    weight: 123
+    weight: 21
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: string_textarea
     region: content
   field_dsj_digital_skill_level:
-    weight: 125
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_digital_technology:
-    weight: 126
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_file_for_download:
-    weight: 127
+    weight: 24
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_dsj_geographic_scope:
-    weight: 29
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_image:
-    weight: 129
+    weight: 8
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -101,19 +101,19 @@ content:
     type: image_image
     region: content
   field_dsj_industry:
-    weight: 130
+    weight: 15
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_latest_update_strategy:
-    weight: 131
+    weight: 20
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_dsj_organization:
-    weight: 132
+    weight: 18
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -122,15 +122,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_dsj_publish_in_core:
-    weight: 133
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_dsj_stakeholder:
-    weight: 134
+    weight: 23
     settings:
       size: 60
       placeholder: ''
@@ -138,7 +131,7 @@ content:
     type: string_textfield
     region: content
   field_dsj_strategy_state_of_play:
-    weight: 135
+    weight: 22
     settings:
       rows: 5
       placeholder: ''
@@ -146,19 +139,19 @@ content:
     type: text_textarea
     region: content
   field_dsj_target_audience:
-    weight: 136
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_target_language:
-    weight: 30
+    weight: 16
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_timeline_roadmap:
-    weight: 138
+    weight: 19
     settings:
       size: 60
       placeholder: ''
@@ -166,29 +159,22 @@ content:
     type: string_textfield
     region: content
   field_dsj_type_of_initiative:
-    weight: 139
+    weight: 17
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_website_link:
-    weight: 140
+    weight: 10
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: typed_link
     region: content
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -196,26 +182,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 3
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 6
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 4
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -223,7 +209,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
@@ -231,4 +217,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_dsj_publish_in_core: true

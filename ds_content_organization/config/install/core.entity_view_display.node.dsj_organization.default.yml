@@ -4,7 +4,6 @@ dependencies:
   config:
     - field.field.node.dsj_organization.body
     - field.field.node.dsj_organization.field_dsj_author
-    - field.field.node.dsj_organization.field_dsj_digital_skill_level
     - field.field.node.dsj_organization.field_dsj_digital_technology
     - field.field.node.dsj_organization.field_dsj_geographic_scope
     - field.field.node.dsj_organization.field_dsj_image
@@ -13,7 +12,6 @@ dependencies:
     - field.field.node.dsj_organization.field_dsj_organization_category
     - field.field.node.dsj_organization.field_dsj_publish_in_core
     - field.field.node.dsj_organization.field_dsj_target_audience
-    - field.field.node.dsj_organization.field_dsj_type_of_initiative
     - field.field.node.dsj_organization.field_dsj_website_link
     - node.type.dsj_organization
   module:
@@ -28,12 +26,12 @@ third_party_settings:
     group_o:
       children:
         - field_dsj_geographic_scope
+        - field_dsj_author
+        - field_dsj_nc_member
         - field_dsj_website_link
         - field_dsj_industry
         - field_dsj_target_audience
-        - field_dsj_digital_skill_level
         - field_dsj_organization_category
-        - field_dsj_type_of_initiative
       parent_name: ''
       weight: 4
       format_type: html_element
@@ -61,13 +59,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_dsj_digital_skill_level:
-    weight: 10
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
+  field_dsj_author:
+    type: string
+    weight: 6
     region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_dsj_geographic_scope:
     weight: 5
     label: inline
@@ -86,35 +85,38 @@ content:
     type: image
     region: content
   field_dsj_industry:
-    weight: 8
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_dsj_organization_category:
-    weight: 11
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_dsj_target_audience:
     weight: 9
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
-  field_dsj_type_of_initiative:
+  field_dsj_nc_member:
+    type: boolean
+    weight: 7
+    region: content
+    label: inline
+    settings:
+      format: true-false
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
+  field_dsj_organization_category:
     weight: 12
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
+  field_dsj_target_audience:
+    weight: 10
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   field_dsj_website_link:
-    weight: 6
+    weight: 8
     label: inline
     settings:
       trim_length: 80
@@ -131,9 +133,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_dsj_author: true
   field_dsj_digital_technology: true
-  field_dsj_nc_member: true
   field_dsj_publish_in_core: true
   langcode: true
   private_message_link: true

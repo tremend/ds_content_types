@@ -30,21 +30,18 @@ third_party_settings:
       children:
         - field_dsj_digital_skill_level
         - field_dsj_digital_technology
+        - field_dsj_geographic_scope
         - field_dsj_post_date
         - field_dsj_target_audience
         - field_dsj_website_link
-        - field_dsj_author
         - field_dsj_industry
         - field_dsj_type_of_initiative
         - field_dsj_publication_type
-        - field_dsj_geographic_scope
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: html_element
       region: content
       format_settings:
-        id: publication-details
-        classes: ''
         element: div
         show_label: true
         label_element: h3
@@ -52,9 +49,9 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
+        id: publication-details
+        classes: bordered-field-list
       label: 'Publication Details'
-_core:
-  default_config_hash: WVVr0zN_CZoOjSKQzCHLqCrIA_ipZf-jTbzfuaLx-7I
 id: node.dsj_skills_intelligence.default
 targetEntityType: node
 bundle: dsj_skills_intelligence
@@ -63,17 +60,9 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_dsj_author:
-    weight: 11
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_dsj_digital_skill_level:
     weight: 4
@@ -90,14 +79,14 @@ content:
     type: list_default
     region: content
   field_dsj_geographic_scope:
-    weight: 15
+    weight: 6
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_image:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       image_style: ''
@@ -116,8 +105,8 @@ content:
     weight: 7
     label: inline
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium_date_without_time
     third_party_settings: {  }
     type: datetime_default
     region: content
@@ -155,11 +144,12 @@ content:
     type: typed_link
     region: content
   links:
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_dsj_author: true
   field_dsj_publish_in_core: true
   private_message_link: true
   search_api_excerpt: true
