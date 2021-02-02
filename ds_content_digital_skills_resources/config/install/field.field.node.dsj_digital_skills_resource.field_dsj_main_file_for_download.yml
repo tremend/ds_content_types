@@ -10,7 +10,7 @@ id: node.dsj_digital_skills_resource.field_dsj_main_file_for_download
 field_name: field_dsj_main_file_for_download
 entity_type: node
 bundle: dsj_digital_skills_resource
-label: 'Main document-File for download'
+label: 'Main document - File for download'
 description: ''
 required: false
 translatable: true

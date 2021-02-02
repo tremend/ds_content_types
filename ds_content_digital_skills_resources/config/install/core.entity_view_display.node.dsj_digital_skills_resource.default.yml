@@ -126,7 +126,7 @@ content:
     label: inline
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
   field_dsj_organization:
     weight: 8

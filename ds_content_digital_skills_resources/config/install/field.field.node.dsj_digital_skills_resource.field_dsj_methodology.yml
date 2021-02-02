@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.storage.node.field_dsj_methodology
     - node.type.dsj_digital_skills_resource
+  module:
+    - text
 id: node.dsj_digital_skills_resource.field_dsj_methodology
 field_name: field_dsj_methodology
 entity_type: node
@@ -15,4 +17,4 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string_long
+field_type: text_long
