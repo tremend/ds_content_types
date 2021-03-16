@@ -3,8 +3,8 @@ status: true
 dependencies:
   module:
     - node
-id: node.field_dsj_is_this_course_free
-field_name: field_dsj_is_this_course_free
+id: node.field_dsj_is_course_free
+field_name: field_dsj_is_course_free
 entity_type: node
 type: boolean
 settings: {  }

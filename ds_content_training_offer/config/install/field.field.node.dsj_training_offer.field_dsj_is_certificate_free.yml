@@ -8,7 +8,7 @@ id: node.dsj_training_offer.field_dsj_is_certificate_free
 field_name: field_dsj_is_certificate_free
 entity_type: node
 bundle: dsj_training_offer
-label: 'Is the certificate\credential free'
+label: 'Is the certificate/credential free'
 description: ''
 required: false
 translatable: false
@@ -17,6 +17,6 @@ default_value:
     value: 0
 default_value_callback: ''
 settings:
-  on_label: 'On'
-  off_label: 'Off'
+  on_label: 'True'
+  off_label: 'False'
 field_type: boolean

@@ -14,6 +14,18 @@ composer require drupal/jsonapi_include
 5. Drupal - Year Only(https://www.drupal.org/project/yearonly)
 composer require drupal/yearonly
 
+6. Drupal - Address(https://www.drupal.org/project/address)
+composer require drupal/address
+
+7. Drupal - Geolocation(https://www.drupal.org/project/geolocation)
+composer require drupal/geolocation
+
+8. Drupal - Geocoder field(https://www.drupal.org/project/geocoder_field)
+composer require drupal/geocoder_field
+
+9. Drupal - Timezone field(https://www.drupal.org/project/tzfield)
+composer require drupal/tzfield
+
 The main module contains a submodule for each content type available. Those content types are:
 1. Article
 2. Digital Skills Resources
@@ -21,7 +33,7 @@ The main module contains a submodule for each content type available. Those cont
 4. Funding Opportunity
 5. Good Practice
 6. Initiative
-7. Organization
+7. Organisation
 8. Page
 9. Skills Intelligence Publication
 10. Strategy
@@ -49,7 +61,7 @@ Common fields:
     2.7. Industry
     2.8. Main document file for download
     2.9. Methodology
-    2.10. Organization
+    2.10. Organisation
     2.11. Publish in core platform
     2.12. Skills resource type
     2.13. Supporting documents
@@ -74,7 +86,10 @@ Common fields:
     3.12. Type of initiative
     3.13. Website link
     3.14. Event setting
-    3.15. Organization
+    3.15. Organisation
+    3.16. Event location
+    3.17. Event coordinates
+    3.18. Event timezone
 4. Funding Opportunity
     4.1. Body
     4.2. Author
@@ -91,8 +106,7 @@ Common fields:
     4.13. Target audience
     4.14. Target group
     4.15. Type of initiative
-    4.16. Type of loan
-    4.17. Website link
+    4.16. Website link
 5. Good Practice
     5.1. Body
     5.2. Media field - still image
@@ -106,7 +120,7 @@ Common fields:
     5.10. Geographic scope - Country
     5.11. Image
     5.12. Industry
-    5.13. Organization
+    5.13. Organisation
     5.14. Publish in core platform
     5.15. Target audience
     5.16. Type of funding
@@ -122,7 +136,7 @@ Common fields:
     6.7. Publish in core platform
     6.8. Target audience
     6.9. Website link
-7. Organization
+7. Organisation
     7.1. Body
     7.2. Author
     7.3. Digital skill level
@@ -131,7 +145,7 @@ Common fields:
     7.6. Image
     7.7. Industry
     7.8. NC member
-    7.9. Organization category
+    7.9. Organisation category
     7.10. Publish in core platform
     7.11. Target audience
     7.12. Type of initiative
@@ -151,12 +165,11 @@ Common fields:
     9.5. Geographic scope - Country
     9.6. Image
     9.7. Industry
-    9.8. Post date
-    9.9. Publication type
-    9.10. Publish in core platform
-    9.11. Target audience
-    9.12. Type of initiative
-    9.13. Website link
+    9.8. Publication type
+    9.9. Publish in core platform
+    9.10. Target audience
+    9.11. Type of initiative
+    9.12. Website link
 10. Strategy
     10.1. Body
     10.2. Author
@@ -168,7 +181,7 @@ Common fields:
     10.8. Image
     10.9. Industry
     10.10. Latest update of the strategy
-    10.11. Organization
+    10.11. Organisation
     10.12. Publish in core platform
     10.13. Stakeholder
     10.14. Strategy - state of play
@@ -189,7 +202,7 @@ Common fields:
     11.9. Industry
     11.10. Is the certificate\credential free
     11.11. Is this course free
-    11.12. Organization
+    11.12. Organisation
     11.13. Publish in core platform
     11.14. Target audience
     11.15. Target group

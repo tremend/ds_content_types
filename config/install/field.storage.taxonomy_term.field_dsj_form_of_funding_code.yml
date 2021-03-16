@@ -2,14 +2,15 @@ langcode: en
 status: true
 dependencies:
   module:
-    - node
     - taxonomy
-id: node.field_dsj_form_of_funding
-field_name: field_dsj_form_of_funding
-entity_type: node
-type: entity_reference
+id: taxonomy_term.field_dsj_form_of_funding_code
+field_name: field_dsj_form_of_funding_code
+entity_type: taxonomy_term
+type: string
 settings:
-  target_type: taxonomy_term
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1

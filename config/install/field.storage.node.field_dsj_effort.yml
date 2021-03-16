@@ -9,6 +9,7 @@ field_name: field_dsj_effort
 entity_type: node
 type: list_string
 settings:
+  allowed_values_function: ''
   allowed_values:
     -
       value: 'http://data.europa.eu/snb/learning-schedule/67395e6b5a'
@@ -19,7 +20,6 @@ settings:
     -
       value: 'http://data.europa.eu/snb/learning-schedule/f230bae523'
       label: 'Part time intensive'
-  allowed_values_function: ''
 module: options
 locked: false
 cardinality: 1

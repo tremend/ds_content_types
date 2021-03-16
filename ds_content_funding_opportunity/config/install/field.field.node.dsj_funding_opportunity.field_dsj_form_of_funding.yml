@@ -4,8 +4,7 @@ dependencies:
   config:
     - field.storage.node.field_dsj_form_of_funding
     - node.type.dsj_funding_opportunity
-  module:
-    - options
+    - taxonomy.vocabulary.dsj_form_of_funding
 id: node.dsj_funding_opportunity.field_dsj_form_of_funding
 field_name: field_dsj_form_of_funding
 entity_type: node
@@ -13,8 +12,17 @@ bundle: dsj_funding_opportunity
 label: 'Form of funding'
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dsj_form_of_funding: dsj_form_of_funding
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -7,7 +7,10 @@ dependencies:
     - field.field.node.dsj_event.field_dsj_date
     - field.field.node.dsj_event.field_dsj_digital_skill_level
     - field.field.node.dsj_event.field_dsj_digital_technology
+    - field.field.node.dsj_event.field_dsj_event_coordinates
+    - field.field.node.dsj_event.field_dsj_event_location
     - field.field.node.dsj_event.field_dsj_event_setting
+    - field.field.node.dsj_event.field_dsj_event_timezone
     - field.field.node.dsj_event.field_dsj_geographic_scope
     - field.field.node.dsj_event.field_dsj_image
     - field.field.node.dsj_event.field_dsj_industry
@@ -19,9 +22,9 @@ dependencies:
     - field.field.node.dsj_event.field_dsj_website_link
     - node.type.dsj_event
   module:
+    - address
     - datetime_range
     - field_group
-    - image
     - options
     - text
     - typed_link
@@ -30,8 +33,7 @@ third_party_settings:
   field_group:
     group_event_details:
       children:
-        - langcode
-        - field_dsj_geographic_scope
+        - field_dsj_author
         - field_dsj_website_link
         - field_dsj_target_language
         - field_dsj_industry
@@ -39,10 +41,11 @@ third_party_settings:
         - field_dsj_digital_skill_level
         - field_dsj_type_of_initiative
         - field_dsj_digital_technology
-        - field_dsj_organization
+        - field_dsj_geographic_scope
         - field_dsj_event_setting
+        - field_dsj_organization
       parent_name: ''
-      weight: 6
+      weight: 5
       format_type: html_element
       region: content
       format_settings:
@@ -64,12 +67,20 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 5
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_dsj_author:
+    type: string
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_dsj_date:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       timezone_override: ''
@@ -79,7 +90,7 @@ content:
     type: daterange_default
     region: content
   field_dsj_digital_skill_level:
-    weight: 16
+    weight: 5
     label: inline
     settings: {  }
     third_party_settings: {  }
@@ -87,27 +98,42 @@ content:
     region: content
   field_dsj_digital_technology:
     type: list_default
-    weight: 18
+    weight: 7
     region: content
     label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_dsj_event_location:
+    type: address_default
+    weight: 7
+    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
   field_dsj_event_setting:
-    weight: 20
+    type: list_default
+    weight: 9
+    region: content
     label: inline
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+  field_dsj_event_timezone:
+    type: basic_string
+    weight: 8
     region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_dsj_geographic_scope:
-    weight: 11
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
+    type: entity_reference_label
+    weight: 8
     region: content
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
   field_dsj_image:
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       image_link: ''
@@ -116,43 +142,43 @@ content:
     type: image
     region: content
   field_dsj_industry:
-    weight: 14
+    weight: 3
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_organization:
-    weight: 19
+    type: entity_reference_label
+    weight: 10
+    region: content
     label: inline
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_dsj_target_audience:
-    weight: 15
+    weight: 4
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_target_language:
-    weight: 13
+    weight: 2
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_type_of_initiative:
-    weight: 17
+    weight: 6
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_website_link:
-    weight: 12
+    weight: 1
     label: inline
     settings:
       trim_length: 80
@@ -163,32 +189,19 @@ content:
     third_party_settings: {  }
     type: typed_link
     region: content
-  flag_subscribe_node:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  flag_voting:
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  langcode:
-    type: language
-    weight: 10
+  field_dsj_publish_in_core:
+    type: boolean
+    weight: 12
     region: content
     label: inline
     settings:
-      link_to_entity: false
-      native_language: false
-    third_party_settings: {  }
-  links:
-    weight: 2
-    region: content
-    settings: {  }
+      format: yes-no
+      format_custom_true: ''
+      format_custom_false: ''
     third_party_settings: {  }
 hidden:
-  field_dsj_author: true
-  field_dsj_publish_in_core: true
+  field_dsj_event_coordinates: true
+  langcode: true
+  links: true
   private_message_link: true
   search_api_excerpt: true

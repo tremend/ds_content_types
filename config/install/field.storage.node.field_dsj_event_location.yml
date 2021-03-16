@@ -2,15 +2,14 @@ langcode: en
 status: true
 dependencies:
   module:
+    - address
     - node
-    - taxonomy
-id: node.field_dsj_form_of_funding
-field_name: field_dsj_form_of_funding
+id: node.field_dsj_event_location
+field_name: field_dsj_event_location
 entity_type: node
-type: entity_reference
-settings:
-  target_type: taxonomy_term
-module: core
+type: address
+settings: {  }
+module: address
 locked: false
 cardinality: 1
 translatable: true

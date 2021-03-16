@@ -2,15 +2,14 @@ langcode: en
 status: true
 dependencies:
   module:
-    - datetime
+    - geolocation
     - node
-id: node.field_dsj_post_date
-field_name: field_dsj_post_date
+id: node.field_dsj_event_coordinates
+field_name: field_dsj_event_coordinates
 entity_type: node
-type: datetime
-settings:
-  datetime_type: date
-module: datetime
+type: geolocation
+settings: {  }
+module: geolocation
 locked: false
 cardinality: 1
 translatable: true
