@@ -2,18 +2,12 @@ langcode: en
 status: true
 dependencies:
   module:
-    - file
-id: file--file
+    - geocoder
+id: geocoder_provider--geocoder_provider
 disabled: true
-path: file/file
-resourceType: file--file
+path: geocoder_provider/geocoder_provider
+resourceType: geocoder_provider--geocoder_provider
 resourceFields:
-  fid:
-    fieldName: fid
-    publicName: fid
-    enhancer:
-      id: ''
-    disabled: false
   uuid:
     fieldName: uuid
     publicName: uuid
@@ -26,51 +20,51 @@ resourceFields:
     enhancer:
       id: ''
     disabled: false
-  uid:
-    fieldName: uid
-    publicName: uid
-    enhancer:
-      id: ''
-    disabled: false
-  filename:
-    fieldName: filename
-    publicName: filename
-    enhancer:
-      id: ''
-    disabled: false
-  uri:
-    fieldName: uri
-    publicName: uri
-    enhancer:
-      id: ''
-    disabled: false
-  filemime:
-    fieldName: filemime
-    publicName: filemime
-    enhancer:
-      id: ''
-    disabled: false
-  filesize:
-    fieldName: filesize
-    publicName: filesize
-    enhancer:
-      id: ''
-    disabled: false
   status:
     fieldName: status
     publicName: status
     enhancer:
       id: ''
     disabled: false
-  created:
-    fieldName: created
-    publicName: created
+  dependencies:
+    fieldName: dependencies
+    publicName: dependencies
     enhancer:
       id: ''
     disabled: false
-  changed:
-    fieldName: changed
-    publicName: changed
+  third_party_settings:
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+    disabled: false
+  _core:
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+    disabled: false
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  label:
+    fieldName: label
+    publicName: label
+    enhancer:
+      id: ''
+    disabled: false
+  plugin:
+    fieldName: plugin
+    publicName: plugin
+    enhancer:
+      id: ''
+    disabled: false
+  configuration:
+    fieldName: configuration
+    publicName: configuration
     enhancer:
       id: ''
     disabled: false

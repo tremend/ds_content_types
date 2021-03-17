@@ -1,0 +1,234 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dsj_event
+id: node--dsj_event
+disabled: false
+path: node/dsj_event
+resourceType: node--dsj_event
+resourceFields:
+  nid:
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  vid:
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  type:
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+    disabled: false
+  revision_timestamp:
+    fieldName: revision_timestamp
+    publicName: revision_timestamp
+    enhancer:
+      id: ''
+    disabled: false
+  revision_uid:
+    fieldName: revision_uid
+    publicName: revision_uid
+    enhancer:
+      id: ''
+    disabled: false
+  revision_log:
+    fieldName: revision_log
+    publicName: revision_log
+    enhancer:
+      id: ''
+    disabled: false
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  uid:
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+    disabled: false
+  title:
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+    disabled: false
+  created:
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+    disabled: false
+  changed:
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+    disabled: false
+  promote:
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+    disabled: false
+  sticky:
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+    disabled: false
+  default_langcode:
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+    disabled: false
+  revision_default:
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+    disabled: false
+  revision_translation_affected:
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+    disabled: false
+  path:
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: ''
+    disabled: false
+  body:
+    fieldName: body
+    publicName: body
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_author:
+    fieldName: field_dsj_author
+    publicName: field_dsj_author
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_date:
+    fieldName: field_dsj_date
+    publicName: field_dsj_date
+    enhancer:
+      id: date_time_from_string
+      settings:
+        dateTimeFormat: 'Y-m-d\TH:i:s'
+    disabled: false
+  field_dsj_digital_skill_level:
+    fieldName: field_dsj_digital_skill_level
+    publicName: field_dsj_digital_skill_level
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_digital_technology:
+    fieldName: field_dsj_digital_technology
+    publicName: field_dsj_digital_technology
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_event_coordinates:
+    fieldName: field_dsj_event_coordinates
+    publicName: field_dsj_event_coordinates
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_event_location:
+    fieldName: field_dsj_event_location
+    publicName: field_dsj_event_location
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_event_setting:
+    fieldName: field_dsj_event_setting
+    publicName: field_dsj_event_setting
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_event_timezone:
+    fieldName: field_dsj_event_timezone
+    publicName: field_dsj_event_timezone
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_geographic_scope:
+    fieldName: field_dsj_geographic_scope
+    publicName: field_dsj_geographic_scope
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_image:
+    fieldName: field_dsj_image
+    publicName: field_dsj_image
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_industry:
+    fieldName: field_dsj_industry
+    publicName: field_dsj_industry
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_organization:
+    fieldName: field_dsj_organization
+    publicName: field_dsj_organization
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_publish_in_core:
+    fieldName: field_dsj_publish_in_core
+    publicName: field_dsj_publish_in_core
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_target_audience:
+    fieldName: field_dsj_target_audience
+    publicName: field_dsj_target_audience
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_target_language:
+    fieldName: field_dsj_target_language
+    publicName: field_dsj_target_language
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_type_of_initiative:
+    fieldName: field_dsj_type_of_initiative
+    publicName: field_dsj_type_of_initiative
+    enhancer:
+      id: ''
+    disabled: false
+  field_dsj_website_link:
+    fieldName: field_dsj_website_link
+    publicName: field_dsj_website_link
+    enhancer:
+      id: ''
+    disabled: false
