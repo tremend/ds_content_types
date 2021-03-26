@@ -1,0 +1,54 @@
+<?php
+
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * @file
+ * Provides main functionality for ds_content_types module.
+ */
+
+/**
+ * Creates the default terms in a vocabulary.
+ *
+ * @param string $vocabulary
+ *   The vocabulary id.
+ * @param array $terms
+ *   The terms to create.
+ * @param array $parent
+ *   The term parents.
+ * @param string $code_field_name
+ *   The code field to populate.
+ */
+function _ds_content_types_add_terms($vocabulary, $terms, array $parent, $code_field_name) {
+  foreach ($terms as $key => $term_data) {
+    $term = Term::create([
+      'name' => $term_data[0],
+      'vid' => $vocabulary,
+      'parent' => $parent,
+      $code_field_name => $term_data[1],
+    ]);
+    $term->save();
+    if (isset($term_data['children'])) {
+      _ds_content_types_add_terms($vocabulary, $term_data['children'], [$term->id()], $code_field_name);
+    }
+  }
+}
+
+/**
+ * Process the terms array generated from CSV.
+ *
+ * @param array $terms
+ *   The terms array to process.
+ */
+function _ds_content_types_process_terms(array &$terms) {
+  foreach ($terms as $key => $data) {
+    if (!empty($data[2])) {
+      $names = array_combine(array_keys($terms), array_column($terms, 0));
+      $parent_key = array_search($data[2], $names);
+      if ($parent_key !== FALSE) {
+        $terms[$parent_key]['children'][] = $data;
+        unset($terms[$key]);
+      }
+    }
+  }
+}

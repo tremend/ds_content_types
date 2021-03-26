@@ -134,7 +134,7 @@ content:
     weight: 24
     label: inline
     settings:
-      format_type: medium
+      format_type: default_timeless_short_date
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
