@@ -57,10 +57,10 @@ content:
   field_dsj_beneficiary:
     weight: 13
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textarea
     region: content
   field_dsj_digital_skill_level:
     weight: 7
@@ -77,10 +77,10 @@ content:
   field_dsj_financing_condition:
     weight: 14
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textarea
     region: content
   field_dsj_financing_intermediary:
     weight: 12

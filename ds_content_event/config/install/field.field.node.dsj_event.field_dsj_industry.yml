@@ -10,7 +10,7 @@ id: node.dsj_event.field_dsj_industry
 field_name: field_dsj_industry
 entity_type: node
 bundle: dsj_event
-label: 'Industry - Field of education and training'
+label: 'Industry - field of education and training'
 description: ''
 required: true
 translatable: true

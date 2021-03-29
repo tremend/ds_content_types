@@ -65,7 +65,7 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
     region: content
   field_dsj_digital_skill_level:
     weight: 7
@@ -125,10 +125,10 @@ content:
   field_dsj_stakeholder:
     weight: 18
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textarea
     region: content
   field_dsj_strategy_state_of_play:
     weight: 17
