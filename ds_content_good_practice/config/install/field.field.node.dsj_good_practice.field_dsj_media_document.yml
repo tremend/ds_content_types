@@ -10,7 +10,7 @@ id: node.dsj_good_practice.field_dsj_media_document
 field_name: field_dsj_media_document
 entity_type: node
 bundle: dsj_good_practice
-label: 'Media field - document'
+label: 'Document'
 description: ''
 required: false
 translatable: false

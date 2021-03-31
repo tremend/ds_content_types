@@ -1,0 +1,8 @@
+Grant,grant,
+Loan,loan,
+"Financial Instrument",financial_instrument,
+"Traditional student bank loans",traditional_student_bank_loans,Loan
+"Online bank loans for students with deferred payment",online_bank_loans_for_students_with_deferred_payment,Loan
+"Specific high tech skills student loans",specific_high_tech_skills_student_loans,Loan
+"Financing solutions for training based on income-sharing",financing_solutions_for_training_based_on_income_sharing,Loan
+"Business loan",business_loan,Loan

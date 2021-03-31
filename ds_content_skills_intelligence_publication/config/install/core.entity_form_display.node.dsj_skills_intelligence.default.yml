@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.dsj_skills_intelligence.field_dsj_geographic_scope
     - field.field.node.dsj_skills_intelligence.field_dsj_image
     - field.field.node.dsj_skills_intelligence.field_dsj_industry
-    - field.field.node.dsj_skills_intelligence.field_dsj_post_date
     - field.field.node.dsj_skills_intelligence.field_dsj_publication_type
     - field.field.node.dsj_skills_intelligence.field_dsj_publish_in_core
     - field.field.node.dsj_skills_intelligence.field_dsj_target_audience
@@ -23,8 +22,6 @@ dependencies:
     - path
     - text
     - typed_link
-_core:
-  default_config_hash: wA-4ykp3wVVyBvGQISwNAdOhSsBQ2s6FfUstnJ6RRow
 id: node.dsj_skills_intelligence.default
 targetEntityType: node
 bundle: dsj_skills_intelligence
@@ -42,12 +39,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   field_dsj_author:
-    weight: 9
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -55,19 +52,19 @@ content:
     type: string_textfield
     region: content
   field_dsj_digital_skill_level:
-    weight: 13
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_digital_technology:
-    weight: 12
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_geographic_scope:
-    weight: 14
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -81,37 +78,31 @@ content:
     type: image_image
     region: content
   field_dsj_industry:
-    weight: 15
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_dsj_post_date:
-    weight: 18
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
     region: content
   field_dsj_publication_type:
-    weight: 17
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_dsj_target_audience:
     weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
+  field_dsj_target_audience:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_dsj_type_of_initiative:
-    weight: 16
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_website_link:
-    weight: 10
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -120,7 +111,7 @@ content:
     region: content
   path:
     type: path
-    weight: 7
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -128,21 +119,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 16
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 20
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 17
     region: content
     third_party_settings: {  }
   title:
@@ -154,13 +145,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 5
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60
@@ -168,5 +159,11 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_dsj_publish_in_core: true
+  field_dsj_publish_in_core:
+    type: boolean_checkbox
+    weight: 25
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

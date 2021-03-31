@@ -10,7 +10,7 @@ id: node.dsj_training_offer.field_dsj_learning_activity
 field_name: field_dsj_learning_activity
 entity_type: node
 bundle: dsj_training_offer
-label: 'Learning Activity'
+label: 'Learning activity'
 description: ''
 required: true
 translatable: false

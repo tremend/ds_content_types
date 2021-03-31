@@ -17,7 +17,6 @@ dependencies:
     - field.field.node.dsj_funding_opportunity.field_dsj_target_audience
     - field.field.node.dsj_funding_opportunity.field_dsj_target_group
     - field.field.node.dsj_funding_opportunity.field_dsj_type_of_initiative
-    - field.field.node.dsj_funding_opportunity.field_dsj_type_of_loan
     - field.field.node.dsj_funding_opportunity.field_dsj_website_link
     - image.style.thumbnail
     - node.type.dsj_funding_opportunity
@@ -26,8 +25,6 @@ dependencies:
     - path
     - text
     - typed_link
-_core:
-  default_config_hash: p1_L6QKldi26Nh8OGhajkQ_fxlh5wf6190vV6prk9Lw
 id: node.dsj_funding_opportunity.default
 targetEntityType: node
 bundle: dsj_funding_opportunity
@@ -45,12 +42,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
   field_dsj_author:
-    weight: 9
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -58,35 +55,35 @@ content:
     type: string_textfield
     region: content
   field_dsj_beneficiary:
-    weight: 21
+    weight: 13
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textarea
     region: content
   field_dsj_digital_skill_level:
-    weight: 13
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_digital_technology:
-    weight: 12
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_financing_condition:
-    weight: 22
+    weight: 14
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: text_textarea
     region: content
   field_dsj_financing_intermediary:
-    weight: 20
+    weight: 12
     settings:
       size: 60
       placeholder: ''
@@ -94,13 +91,13 @@ content:
     type: string_textfield
     region: content
   field_dsj_form_of_funding:
-    weight: 18
+    weight: 15
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_geographic_scope:
-    weight: 14
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -114,37 +111,31 @@ content:
     type: image_image
     region: content
   field_dsj_industry:
-    weight: 15
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_target_audience:
-    weight: 11
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_target_group:
-    weight: 17
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_type_of_initiative:
-    weight: 16
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_dsj_type_of_loan:
-    weight: 19
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_website_link:
-    weight: 10
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -153,7 +144,7 @@ content:
     region: content
   path:
     type: path
-    weight: 7
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -161,21 +152,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 19
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 22
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 20
     region: content
     third_party_settings: {  }
   title:
@@ -187,13 +178,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 13
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 17
     settings:
       match_operator: CONTAINS
       size: 60
@@ -201,5 +192,11 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_dsj_publish_in_core: true
+  field_dsj_publish_in_core:
+    type: boolean_checkbox
+    weight: 25
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

@@ -17,7 +17,6 @@ dependencies:
     - field.field.node.dsj_funding_opportunity.field_dsj_target_audience
     - field.field.node.dsj_funding_opportunity.field_dsj_target_group
     - field.field.node.dsj_funding_opportunity.field_dsj_type_of_initiative
-    - field.field.node.dsj_funding_opportunity.field_dsj_type_of_loan
     - field.field.node.dsj_funding_opportunity.field_dsj_website_link
     - node.type.dsj_funding_opportunity
   module:
@@ -34,17 +33,16 @@ third_party_settings:
         - field_dsj_beneficiary
         - field_dsj_financing_condition
         - field_dsj_form_of_funding
-        - field_dsj_geographic_scope
+        - field_dsj_digital_technology
         - field_dsj_website_link
         - field_dsj_financing_intermediary
-        - field_dsj_target_group
         - field_dsj_target_audience
         - field_dsj_digital_skill_level
-        - field_dsj_type_of_loan
+        - field_dsj_geographic_scope
         - field_dsj_type_of_initiative
         - field_dsj_industry
       parent_name: ''
-      weight: 4
+      weight: 3
       format_type: html_element
       region: content
       format_settings:
@@ -66,12 +64,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_dsj_beneficiary:
-    weight: 4
+    weight: 1
     label: inline
     settings:
       link_to_entity: false
@@ -79,14 +77,21 @@ content:
     type: string
     region: content
   field_dsj_digital_skill_level:
-    weight: 12
+    weight: 8
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
+  field_dsj_digital_technology:
+    type: list_default
+    weight: 4
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
   field_dsj_financing_condition:
-    weight: 5
+    weight: 2
     label: inline
     settings:
       link_to_entity: false
@@ -94,7 +99,7 @@ content:
     type: string
     region: content
   field_dsj_financing_intermediary:
-    weight: 9
+    weight: 6
     label: inline
     settings:
       link_to_entity: false
@@ -102,21 +107,23 @@ content:
     type: string
     region: content
   field_dsj_form_of_funding:
-    weight: 6
+    weight: 3
     label: inline
-    settings: {  }
+    settings:
+      link: false
     third_party_settings: {  }
-    type: list_default
+    type: entity_reference_label
     region: content
   field_dsj_geographic_scope:
-    weight: 7
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
+    type: entity_reference_label
+    weight: 9
     region: content
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
   field_dsj_image:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       image_link: ''
@@ -125,43 +132,28 @@ content:
     type: image
     region: content
   field_dsj_industry:
-    weight: 15
+    weight: 12
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_dsj_target_audience:
+    weight: 7
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_dsj_type_of_initiative:
     weight: 11
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
-  field_dsj_target_group:
-    weight: 10
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_dsj_type_of_initiative:
-    weight: 14
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_dsj_type_of_loan:
-    weight: 13
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_dsj_website_link:
-    weight: 8
+    weight: 5
     label: inline
     settings:
       trim_length: 80
@@ -172,15 +164,20 @@ content:
     third_party_settings: {  }
     type: typed_link
     region: content
-  links:
-    weight: 1
+  field_dsj_publish_in_core:
+    type: boolean
+    weight: 12
     region: content
-    settings: {  }
+    label: inline
+    settings:
+      format: yes-no
+      format_custom_true: ''
+      format_custom_false: ''
     third_party_settings: {  }
 hidden:
   field_dsj_author: true
-  field_dsj_digital_technology: true
-  field_dsj_publish_in_core: true
+  field_dsj_target_group: true
   langcode: true
+  links: true
   private_message_link: true
   search_api_excerpt: true

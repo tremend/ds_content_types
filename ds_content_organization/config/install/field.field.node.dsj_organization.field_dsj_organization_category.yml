@@ -10,7 +10,7 @@ id: node.dsj_organization.field_dsj_organization_category
 field_name: field_dsj_organization_category
 entity_type: node
 bundle: dsj_organization
-label: 'Organization category'
+label: 'Organisation category'
 description: ''
 required: true
 translatable: true

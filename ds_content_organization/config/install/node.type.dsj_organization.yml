@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 third_party_settings: {  }
-name: Organization
+name: Organisation
 type: dsj_organization
 description: ''
 help: ''

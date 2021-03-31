@@ -1,0 +1,869 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - options
+id: taxonomy_term.field_dsj_country_code
+field_name: field_dsj_country_code
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/1A0'
+      label: Kosovo
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ABW'
+      label: Aruba
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/AFG'
+      label: Afghanistan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/AFI'
+      label: 'French Afar and Issas'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/AGO'
+      label: Angola
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/AIA'
+      label: Anguilla
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ALA'
+      label: 'Åland Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ALB'
+      label: Albania
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/AND'
+      label: Andorra
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ANT'
+      label: 'Netherlands Antilles'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ARE'
+      label: 'United Arab Emirates'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ARG'
+      label: Argentina
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ARM'
+      label: Armenia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ASM'
+      label: 'American Samoa'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ATA'
+      label: Antarctica
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ATB'
+      label: 'British Antarctic Territory'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ATF'
+      label: 'French Southern Lands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ATG'
+      label: 'Antigua and Barbuda'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ATN'
+      label: 'Dronning Maud Land'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/AUS'
+      label: Australia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/AUT'
+      label: Austria
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/AZE'
+      label: Azerbaijan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BDI'
+      label: Burundi
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BEL'
+      label: Belgium
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BEN'
+      label: Benin
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BES'
+      label: 'Bonaire, Saint Eustatius and Saba'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BFA'
+      label: 'Burkina Faso'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BGD'
+      label: Bangladesh
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BGR'
+      label: Bulgaria
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BHR'
+      label: Bahrain
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BHS'
+      label: Bahamas
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BIH'
+      label: 'Bosnia and Herzegovina'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BLM'
+      label: 'Saint Barthélemy'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BLR'
+      label: Belarus
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BLZ'
+      label: Belize
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BMU'
+      label: Bermuda
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BOL'
+      label: Bolivia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BRA'
+      label: Brazil
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BRB'
+      label: Barbados
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BRN'
+      label: Brunei
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BTN'
+      label: Bhutan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BUR'
+      label: Burma
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BVT'
+      label: 'Bouvet Island'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BWA'
+      label: Botswana
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/BYS'
+      label: Belarus
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CAF'
+      label: 'Central African Republic'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CAN'
+      label: Canada
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CCK'
+      label: 'Cocos (Keeling) Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CHE'
+      label: Switzerland
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CHL'
+      label: Chile
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CHN'
+      label: China
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CIV'
+      label: 'Côte d’Ivoire'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CMR'
+      label: Cameroon
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/COD'
+      label: 'Democratic Republic of the Congo'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/COG'
+      label: Congo
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/COK'
+      label: 'Cook Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/COL'
+      label: Colombia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/COM'
+      label: Comoros
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CPT'
+      label: Clipperton
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CPV'
+      label: 'Cape Verde'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CRI'
+      label: 'Costa Rica'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CSK'
+      label: Czechoslovakia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CTE'
+      label: 'Canton and Enderbury Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CUB'
+      label: Cuba
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CUW'
+      label: Curaçao
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CXR'
+      label: 'Christmas Island'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CYM'
+      label: 'Cayman Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CYP'
+      label: Cyprus
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/CZE'
+      label: Czechia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/DDR'
+      label: 'East Germany'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/DEU'
+      label: Germany
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/DHY'
+      label: Dahomey
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/DJI'
+      label: Djibouti
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/DMA'
+      label: Dominica
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/DNK'
+      label: Denmark
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/DOM'
+      label: 'Dominican Republic'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/DZA'
+      label: Algeria
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ECU'
+      label: Ecuador
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/EGY'
+      label: Egypt
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ERI'
+      label: Eritrea
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ESH'
+      label: 'Western Sahara'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ESP'
+      label: Spain
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/EST'
+      label: Estonia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ETH'
+      label: Ethiopia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/EUR'
+      label: 'European Union'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/FIN'
+      label: Finland
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/FJI'
+      label: Fiji
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/FLK'
+      label: 'Falkland Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/FQ0'
+      label: 'French Southern and Antarctic Lands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/FRA'
+      label: France
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/FRO'
+      label: Faroes
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/FSM'
+      label: Micronesia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/FXX'
+      label: 'Metropolitan France'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GAB'
+      label: Gabon
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GBR'
+      label: 'United Kingdom'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GEL'
+      label: 'Gilbert and Ellice Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GEO'
+      label: Georgia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GGY'
+      label: Guernsey
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GHA'
+      label: Ghana
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GIB'
+      label: Gibraltar
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GIN'
+      label: Guinea
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GLP'
+      label: Guadeloupe
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GMB'
+      label: 'The Gambia'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GNB'
+      label: Guinea-Bissau
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GNQ'
+      label: 'Equatorial Guinea'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GRC'
+      label: Greece
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GRD'
+      label: Grenada
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GRL'
+      label: Greenland
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GTM'
+      label: Guatemala
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GUF'
+      label: 'French Guiana'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GUM'
+      label: Guam
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/GUY'
+      label: Guyana
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/HKG'
+      label: 'Hong Kong'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/HMD'
+      label: 'Heard Island and McDonald Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/HND'
+      label: Honduras
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/HRV'
+      label: Croatia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/HTI'
+      label: Haiti
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/HUN'
+      label: Hungary
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/HVO'
+      label: 'Upper Volta'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/IDN'
+      label: Indonesia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/IMN'
+      label: 'Isle of Man'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/IND'
+      label: India
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/IOT'
+      label: 'British Indian Ocean Territory'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/IRL'
+      label: Ireland
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/IRN'
+      label: Iran
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/IRQ'
+      label: Iraq
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ISL'
+      label: Iceland
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ISR'
+      label: Israel
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ITA'
+      label: Italy
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/JAM'
+      label: Jamaica
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/JEY'
+      label: Jersey
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/JOR'
+      label: Jordan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/JPN'
+      label: Japan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/JTN'
+      label: 'Johnston Island'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/KAZ'
+      label: Kazakhstan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/KEN'
+      label: Kenya
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/KGZ'
+      label: Kyrgyzstan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/KHM'
+      label: Cambodia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/KIR'
+      label: Kiribati
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/KNA'
+      label: 'Saint Kitts and Nevis'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/KOR'
+      label: 'South Korea'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/KWT'
+      label: Kuwait
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/LAO'
+      label: Laos
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/LBN'
+      label: Lebanon
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/LBR'
+      label: Liberia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/LBY'
+      label: Libya
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/LCA'
+      label: 'Saint Lucia'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/LIE'
+      label: Liechtenstein
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/LKA'
+      label: 'Sri Lanka'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/LSO'
+      label: Lesotho
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/LTU'
+      label: Lithuania
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/LUX'
+      label: Luxembourg
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/LVA'
+      label: Latvia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MAC'
+      label: Macau
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MAF'
+      label: 'Saint Martin'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MAR'
+      label: Morocco
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MCO'
+      label: Monaco
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MDA'
+      label: Moldova
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MDG'
+      label: Madagascar
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MDV'
+      label: Maldives
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MEX'
+      label: Mexico
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MHL'
+      label: 'Marshall Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MID'
+      label: 'Midway Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MKD'
+      label: 'North Macedonia'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MLI'
+      label: Mali
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MLT'
+      label: Malta
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MMR'
+      label: Myanmar/Burma
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MNE'
+      label: Montenegro
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MNG'
+      label: Mongolia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MNP'
+      label: 'Northern Mariana Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MOZ'
+      label: Mozambique
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MRT'
+      label: Mauritania
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MSR'
+      label: Montserrat
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MTQ'
+      label: Martinique
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MUS'
+      label: Mauritius
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MWI'
+      label: Malawi
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MYS'
+      label: Malaysia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/MYT'
+      label: Mayotte
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NAM'
+      label: Namibia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NCL'
+      label: 'New Caledonia'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NER'
+      label: Niger
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NFK'
+      label: 'Norfolk Island'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NGA'
+      label: Nigeria
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NHB'
+      label: 'New Hebrides'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NIC'
+      label: Nicaragua
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NIU'
+      label: Niue
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NLD'
+      label: Netherlands
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NOR'
+      label: Norway
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NPL'
+      label: Nepal
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NRU'
+      label: Nauru
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NTZ'
+      label: 'Neutral Zone'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/NZL'
+      label: 'New Zealand'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/OMN'
+      label: Oman
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PAK'
+      label: Pakistan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PAN'
+      label: Panama
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PCI'
+      label: 'Trust Territory of the Pacific Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PCN'
+      label: 'Pitcairn Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PCZ'
+      label: 'Panama Canal Zone'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PER'
+      label: Peru
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PHL'
+      label: Philippines
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PLW'
+      label: Palau
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PNG'
+      label: 'Papua New Guinea'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/POL'
+      label: Poland
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PRI'
+      label: 'Puerto Rico'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PRK'
+      label: 'North Korea'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PRT'
+      label: Portugal
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PRY'
+      label: Paraguay
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PSE'
+      label: Palestine
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PUS'
+      label: 'US Miscellaneous Pacific Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/PYF'
+      label: 'French Polynesia'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/QAT'
+      label: Qatar
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/REU'
+      label: Réunion
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/RHO'
+      label: 'Southern Rhodesia'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ROU'
+      label: Romania
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/RUS'
+      label: Russia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/RWA'
+      label: Rwanda
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SAU'
+      label: 'Saudi Arabia'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SCG'
+      label: 'Serbia and Montenegro'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SDN'
+      label: Sudan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SEN'
+      label: Senegal
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SGP'
+      label: Singapore
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SGS'
+      label: 'South Georgia and the South Sandwich Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SHN'
+      label: 'Saint Helena, Ascension and Tristan da Cunha'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SJM'
+      label: 'Svalbard and Jan Mayen'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SKM'
+      label: Sikkim
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SLB'
+      label: 'Solomon Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SLE'
+      label: 'Sierra Leone'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SLV'
+      label: 'El Salvador'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SMR'
+      label: 'San Marino'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SOM'
+      label: Somalia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SPM'
+      label: 'Saint Pierre and Miquelon'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SRB'
+      label: Serbia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SSD'
+      label: 'South Sudan'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/STP'
+      label: 'São Tomé and Príncipe'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SUN'
+      label: 'Soviet Union'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SUR'
+      label: Suriname
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SVK'
+      label: Slovakia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SVN'
+      label: Slovenia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SWE'
+      label: Sweden
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SWZ'
+      label: Eswatini
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SXM'
+      label: 'Sint Maarten'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SYC'
+      label: Seychelles
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/SYR'
+      label: Syria
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TCA'
+      label: 'Turks and Caicos Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TCD'
+      label: Chad
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TGO'
+      label: Togo
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/THA'
+      label: Thailand
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TJK'
+      label: Tajikistan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TKL'
+      label: Tokelau
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TKM'
+      label: Turkmenistan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TLS'
+      label: Timor-Leste
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TMP'
+      label: 'East Timor'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TON'
+      label: Tonga
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TTO'
+      label: 'Trinidad and Tobago'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TUN'
+      label: Tunisia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TUR'
+      label: Turkey
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TUV'
+      label: Tuvalu
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TWN'
+      label: Taiwan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/TZA'
+      label: Tanzania
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/UGA'
+      label: Uganda
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/UKR'
+      label: Ukraine
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/UMI'
+      label: 'United States Minor Outlying Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/URY'
+      label: Uruguay
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/USA'
+      label: 'United States'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/UZB'
+      label: Uzbekistan
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/VAT'
+      label: 'Vatican City'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/VCT'
+      label: 'Saint Vincent and the Grenadines'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/VDR'
+      label: 'Democratic Republic of Vietnam'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/VEN'
+      label: Venezuela
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/VGB'
+      label: 'British Virgin Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/VIR'
+      label: 'US Virgin Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/VNM'
+      label: Vietnam
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/VUT'
+      label: Vanuatu
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/WAK'
+      label: 'Wake Islands'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/WLF'
+      label: 'Wallis and Futuna'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/WSM'
+      label: Samoa
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/YEM'
+      label: Yemen
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/YMD'
+      label: 'North Yemen'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/YUG'
+      label: Yugoslavia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ZAF'
+      label: 'South Africa'
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ZMB'
+      label: Zambia
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ZR0'
+      label: Zaire
+    -
+      value: 'http://publications.europa.eu/resource/authority/country/ZWE'
+      label: Zimbabwe
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

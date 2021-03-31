@@ -13,7 +13,7 @@ dependencies:
     - field.field.node.dsj_training_offer.field_dsj_image
     - field.field.node.dsj_training_offer.field_dsj_industry
     - field.field.node.dsj_training_offer.field_dsj_is_certificate_free
-    - field.field.node.dsj_training_offer.field_dsj_is_this_course_free
+    - field.field.node.dsj_training_offer.field_dsj_is_course_free
     - field.field.node.dsj_training_offer.field_dsj_learning_activity
     - field.field.node.dsj_training_offer.field_dsj_organization
     - field.field.node.dsj_training_offer.field_dsj_publish_in_core
@@ -35,8 +35,6 @@ dependencies:
     - text
     - typed_link
     - yearonly
-_core:
-  default_config_hash: F8Qx2iGb6rTJZHYhT9xAxqNsWrFTYEaXpPaJGPo3t1c
 id: node.dsj_training_offer.default
 targetEntityType: node
 bundle: dsj_training_offer
@@ -123,7 +121,7 @@ content:
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_dsj_is_this_course_free:
+  field_dsj_is_course_free:
     weight: 18
     settings:
       display_label: true
@@ -269,5 +267,11 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_dsj_publish_in_core: true
+  field_dsj_publish_in_core:
+    type: boolean_checkbox
+    weight: 25
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

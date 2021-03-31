@@ -4,8 +4,7 @@ dependencies:
   config:
     - field.storage.node.field_dsj_geographic_scope
     - node.type.article
-  module:
-    - options
+    - taxonomy.vocabulary.dsj_country
 id: node.article.field_dsj_geographic_scope
 field_name: field_dsj_geographic_scope
 entity_type: node
@@ -16,5 +15,14 @@ required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dsj_country: dsj_country
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

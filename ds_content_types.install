@@ -15,4 +15,17 @@ function ds_content_types_install() {
   $jsonapi_config = $config_factory->getEditable('jsonapi_extras.settings');
   $jsonapi_config->set('include_count', TRUE);
   $jsonapi_config->save();
+
+  $countries = array_map('str_getcsv', file(drupal_get_path('module', 'ds_content_types') . '/countries.csv'));
+  if (!empty($countries)) {
+    // Group the countries by the term parents.
+    _ds_content_types_process_terms($countries);
+    _ds_content_types_add_terms('dsj_country', $countries, [], 'field_dsj_country_code');
+  }
+  $form_of_fundings = array_map('str_getcsv', file(drupal_get_path('module', 'ds_content_types') . '/form_of_fundings.csv'));
+  if (!empty($form_of_fundings)) {
+    // Group the form of fundings by the term parents.
+    _ds_content_types_process_terms($form_of_fundings);
+    _ds_content_types_add_terms('dsj_form_of_funding', $form_of_fundings, [], 'field_dsj_form_of_funding_code');
+  }
 }

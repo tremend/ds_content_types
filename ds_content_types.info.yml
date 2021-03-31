@@ -7,10 +7,14 @@ php: 7.3
 core_version_requirement: ^8 || ^9
 
 dependencies:
+  - 'drupal:address'
   - 'drupal:datetime_range'
   - 'drupal:field_group'
+  - 'drupal:geocoder_field'
+  - 'drupal:geolocation'
   - 'drupal:jsonapi'
   - 'drupal:jsonapi_extras'
   - 'drupal:jsonapi_include'
   - 'drupal:typed_link'
+  - 'drupal:tzfield'
   - 'drupal:yearonly'
