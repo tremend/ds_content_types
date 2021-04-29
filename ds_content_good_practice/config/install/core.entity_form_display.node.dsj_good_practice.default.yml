@@ -29,6 +29,8 @@ dependencies:
     - path
     - text
     - typed_link
+_core:
+  default_config_hash: CNTvhxaCxhCiINd5rqFRgG1AMveGQK-tPEuOf8eiOAU
 id: node.dsj_good_practice.default
 targetEntityType: node
 bundle: dsj_good_practice
@@ -59,25 +61,25 @@ content:
     type: string_textfield
     region: content
   field_dsj_date:
-    weight: 12
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
     region: content
   field_dsj_digital_skill_level:
-    weight: 7
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_digital_technology:
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_geographic_scope:
-    weight: 8
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -91,41 +93,41 @@ content:
     type: image_image
     region: content
   field_dsj_industry:
-    weight: 9
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_media_audio:
-    weight: 15
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: file_generic
-    region: content
-  field_dsj_media_document:
-    weight: 14
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: file_generic
-    region: content
-  field_dsj_media_image:
-    weight: 17
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: file_generic
-    region: content
-  field_dsj_media_video:
     weight: 16
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
+  field_dsj_media_document:
+    weight: 15
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_dsj_media_image:
+    weight: 18
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_dsj_media_video:
+    weight: 17
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
   field_dsj_organization:
-    weight: 13
+    weight: 14
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -134,8 +136,15 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_dsj_target_audience:
+  field_dsj_publish_in_core:
+    type: boolean_checkbox
     weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_dsj_target_audience:
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -149,13 +158,13 @@ content:
     type: string_textfield
     region: content
   field_dsj_type_of_funding:
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_type_of_initiative:
-    weight: 10
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -217,12 +226,5 @@ content:
       placeholder: ''
       match_limit: 10
     region: content
-    third_party_settings: {  }
-  field_dsj_publish_in_core:
-    type: boolean_checkbox
-    weight: 25
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
 hidden: {  }

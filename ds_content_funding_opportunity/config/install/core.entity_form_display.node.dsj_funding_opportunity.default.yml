@@ -25,6 +25,8 @@ dependencies:
     - path
     - text
     - typed_link
+_core:
+  default_config_hash: Gt5z-jQAtsM92AKM0lz4RBItgkNzX9FeSaKXQq47vHE
 id: node.dsj_funding_opportunity.default
 targetEntityType: node
 bundle: dsj_funding_opportunity
@@ -55,7 +57,7 @@ content:
     type: string_textfield
     region: content
   field_dsj_beneficiary:
-    weight: 13
+    weight: 15
     settings:
       rows: 5
       placeholder: ''
@@ -63,19 +65,19 @@ content:
     type: text_textarea
     region: content
   field_dsj_digital_skill_level:
-    weight: 7
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_digital_technology:
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_financing_condition:
-    weight: 14
+    weight: 16
     settings:
       rows: 5
       placeholder: ''
@@ -83,7 +85,7 @@ content:
     type: text_textarea
     region: content
   field_dsj_financing_intermediary:
-    weight: 12
+    weight: 14
     settings:
       size: 60
       placeholder: ''
@@ -91,13 +93,13 @@ content:
     type: string_textfield
     region: content
   field_dsj_form_of_funding:
-    weight: 15
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_geographic_scope:
-    weight: 8
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -111,25 +113,32 @@ content:
     type: image_image
     region: content
   field_dsj_industry:
-    weight: 9
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_dsj_target_audience:
+  field_dsj_publish_in_core:
+    type: boolean_checkbox
     weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_dsj_target_audience:
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_target_group:
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_type_of_initiative:
-    weight: 10
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -191,12 +200,5 @@ content:
       placeholder: ''
       match_limit: 10
     region: content
-    third_party_settings: {  }
-  field_dsj_publish_in_core:
-    type: boolean_checkbox
-    weight: 25
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
 hidden: {  }

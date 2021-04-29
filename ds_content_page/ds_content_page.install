@@ -70,7 +70,7 @@ function ds_content_page_update_form_view_display() {
   \Drupal::entityTypeManager()->getStorage('entity_form_display')
     ->load('node.page.default')
     ->setComponent('field_dsj_author', [
-      'weight' => 13,
+      'weight' => 14,
       'settings' => [
         'size' => 60,
         'placeholder' => '',
@@ -100,7 +100,7 @@ function ds_content_page_update_form_view_display() {
       'region' => 'content',
     ])
     ->setComponent('field_dsj_publish_in_core', [
-      'weight' => 19,
+      'weight' => 13,
       'settings' => [
         'display_label' => TRUE,
       ],

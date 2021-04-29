@@ -1,7 +1,7 @@
-name: edsjp_content_article
+name: Edsjp content - Article
 type: module
 description: Custom module containing the Article content type.
-package: Custom
+package: Edsjp
 core: 8.x
 php: 7.3
 core_version_requirement: ^8 || ^9

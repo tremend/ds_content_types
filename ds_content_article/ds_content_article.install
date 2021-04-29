@@ -113,21 +113,21 @@ function ds_content_article_update_form_view_display() {
       'region' => 'content',
     ])
     ->setComponent('field_dsj_digital_skill_level', [
-      'weight' => 6,
+      'weight' => 7,
       'settings' => [],
       'third_party_settings' => [],
       'type' => 'options_select',
       'region' => 'content',
     ])
     ->setComponent('field_dsj_digital_technology', [
-      'weight' => 5,
+      'weight' => 6,
       'settings' => [],
       'third_party_settings' => [],
       'type' => 'options_select',
       'region' => 'content',
     ])
     ->setComponent('field_dsj_geographic_scope', [
-      'weight' => 7,
+      'weight' => 8,
       'settings' => [],
       'third_party_settings' => [],
       'type' => 'options_select',
@@ -145,7 +145,7 @@ function ds_content_article_update_form_view_display() {
       'weight' => 2,
     ])
     ->setComponent('field_dsj_type_of_initiative', [
-      'weight' => 8,
+      'weight' => 9,
       'settings' => [],
       'third_party_settings' => [],
       'type' => 'options_select',
@@ -162,7 +162,7 @@ function ds_content_article_update_form_view_display() {
       'region' => 'content',
     ])
     ->setComponent('field_dsj_publish_in_core', [
-      'weight' => 19,
+      'weight' => 5,
       'settings' => [
         'display_label' => TRUE,
       ],

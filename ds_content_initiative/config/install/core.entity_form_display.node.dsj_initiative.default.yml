@@ -20,6 +20,8 @@ dependencies:
     - path
     - text
     - typed_link
+_core:
+  default_config_hash: nqm4OSVRWlGoaA6Ohf4ouzr14B_zAnnG7mOzXnj0THM
 id: node.dsj_initiative.default
 targetEntityType: node
 bundle: dsj_initiative
@@ -37,7 +39,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 14
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -50,19 +52,19 @@ content:
     type: string_textfield
     region: content
   field_dsj_digital_skill_level:
-    weight: 7
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_digital_technology:
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_geographic_scope:
-    weight: 8
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -76,19 +78,26 @@ content:
     type: image_image
     region: content
   field_dsj_industry:
-    weight: 9
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_dsj_target_audience:
+  field_dsj_publish_in_core:
+    type: boolean_checkbox
     weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_dsj_target_audience:
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_type_of_initiative:
-    weight: 10
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -103,7 +112,7 @@ content:
     region: content
   path:
     type: path
-    weight: 17
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -111,21 +120,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 14
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 19
+    weight: 17
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 15
     region: content
     third_party_settings: {  }
   title:
@@ -150,12 +159,5 @@ content:
       placeholder: ''
       match_limit: 10
     region: content
-    third_party_settings: {  }
-  field_dsj_publish_in_core:
-    type: boolean_checkbox
-    weight: 25
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
 hidden: {  }

@@ -1,7 +1,7 @@
-name: edsjp_content
+name: Edsjp content
 type: module
 description: Custom module containing the content types.
-package: Custom
+package: Edsjp
 core: 8.x
 php: 7.3
 core_version_requirement: ^8 || ^9
