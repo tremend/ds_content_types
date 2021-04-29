@@ -4,6 +4,8 @@ dependencies:
   config:
     - field.storage.node.field_dsj_stakeholder
     - node.type.dsj_strategy
+  module:
+    - text
 id: node.dsj_strategy.field_dsj_stakeholder
 field_name: field_dsj_stakeholder
 entity_type: node
@@ -15,4 +17,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: text_long
