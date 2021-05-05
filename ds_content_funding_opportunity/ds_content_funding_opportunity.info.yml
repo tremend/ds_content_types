@@ -5,6 +5,7 @@ package: Edsjp
 core: 8.x
 php: 7.3
 core_version_requirement: ^8 || ^9
+version: '8.x-1.0'
 
 dependencies:
   - 'drupal:ds_content_types'
