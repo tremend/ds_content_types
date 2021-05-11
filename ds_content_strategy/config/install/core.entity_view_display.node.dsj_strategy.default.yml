@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.dsj_strategy.field_dsj_file_for_download
     - field.field.node.dsj_strategy.field_dsj_geographic_scope
     - field.field.node.dsj_strategy.field_dsj_image
-    - field.field.node.dsj_strategy.field_dsj_industry
     - field.field.node.dsj_strategy.field_dsj_latest_update_strategy
     - field.field.node.dsj_strategy.field_dsj_organization
     - field.field.node.dsj_strategy.field_dsj_publish_in_core
@@ -39,7 +38,6 @@ third_party_settings:
         - field_dsj_digital_skill_level
         - field_dsj_digital_technology
         - field_dsj_geographic_scope
-        - field_dsj_industry
         - field_dsj_organization
         - field_dsj_strategy_state_of_play
         - field_dsj_target_audience
@@ -122,13 +120,6 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
-  field_dsj_industry:
-    weight: 16
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
     region: content
   field_dsj_latest_update_strategy:
     weight: 24
