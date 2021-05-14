@@ -27,7 +27,7 @@ id: node.dsj_event.field_dsj_event_coordinates
 field_name: field_dsj_event_coordinates
 entity_type: node
 bundle: dsj_event
-label: 'Location Coordinates'
+label: 'Location coordinates'
 description: ''
 required: false
 translatable: false

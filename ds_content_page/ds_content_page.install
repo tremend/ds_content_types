@@ -5,6 +5,7 @@
  * Install hooks for the ds_content_page module.
  */
 
+use Drupal\field\Entity\FieldConfig;
 use Drupal\field\Entity\FieldStorageConfig;
 
 /**
@@ -108,4 +109,5 @@ function ds_content_page_update_form_view_display() {
       'type' => 'boolean_checkbox',
       'region' => 'content',
     ])->save();
+  FieldConfig::loadByName('node', 'page', 'body')->setRequired(TRUE)->save();
 }
