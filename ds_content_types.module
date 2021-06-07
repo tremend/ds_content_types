@@ -1,6 +1,8 @@
 <?php
 
 use Drupal\taxonomy\Entity\Term;
+use \Drupal\field\Entity\FieldStorageConfig;
+use \Drupal\Core\Entity\ContentEntityInterface;
 
 /**
  * @file
