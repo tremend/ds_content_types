@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.dsj_strategy.field_dsj_file_for_download
     - field.field.node.dsj_strategy.field_dsj_geographic_scope
     - field.field.node.dsj_strategy.field_dsj_image
-    - field.field.node.dsj_strategy.field_dsj_industry
     - field.field.node.dsj_strategy.field_dsj_latest_update_strategy
     - field.field.node.dsj_strategy.field_dsj_organization
     - field.field.node.dsj_strategy.field_dsj_publish_in_core
@@ -30,6 +29,8 @@ dependencies:
     - path
     - text
     - typed_link
+_core:
+  default_config_hash: LoBuHcI0acTsrSRJcfgqTvqZbKGC2h_3GxW16T5mWbI
 id: node.dsj_strategy.default
 targetEntityType: node
 bundle: dsj_strategy
@@ -47,7 +48,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 22
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -68,13 +69,13 @@ content:
     type: text_textarea
     region: content
   field_dsj_digital_skill_level:
-    weight: 7
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_digital_technology:
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -87,7 +88,7 @@ content:
     type: file_generic
     region: content
   field_dsj_geographic_scope:
-    weight: 8
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -99,12 +100,6 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-    region: content
-  field_dsj_industry:
-    weight: 9
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
     region: content
   field_dsj_latest_update_strategy:
     weight: 15
@@ -122,6 +117,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_dsj_publish_in_core:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_dsj_stakeholder:
     weight: 18
     settings:
@@ -139,13 +141,13 @@ content:
     type: text_textarea
     region: content
   field_dsj_target_audience:
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_target_language:
-    weight: 10
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -174,7 +176,7 @@ content:
     region: content
   path:
     type: path
-    weight: 25
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -182,21 +184,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 23
+    weight: 22
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 27
+    weight: 25
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 24
+    weight: 23
     region: content
     third_party_settings: {  }
   title:
@@ -209,19 +211,12 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 21
+    weight: 20
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
       match_limit: 10
     region: content
-    third_party_settings: {  }
-  field_dsj_publish_in_core:
-    type: boolean_checkbox
-    weight: 25
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
 hidden: {  }

@@ -86,7 +86,7 @@ Common fields:
     3.12. Type of initiative
     3.13. Website link
     3.14. Event setting
-    3.15. Organisation
+    3.15. Event organiser
     3.16. Event location
     3.17. Event coordinates
     3.18. Event timezone
@@ -109,10 +109,10 @@ Common fields:
     4.16. Website link
 5. Good Practice
     5.1. Body
-    5.2. Media field - still image
-    5.3. Media field - video
-    5.4. Media field - audio
-    5.5. Media field - document
+    5.2. Still image
+    5.3. Video
+    5.4. Audio
+    5.5. Documents
     5.6. Author
     5.7. Date
     5.8. Digital skill level
@@ -154,7 +154,6 @@ Common fields:
     8.1. Body
     8.2. Author
     8.3. Image
-    8.4. Page category
     8.5. Publish in core platform
     8.6. Website link
 9. Skills intelligence publication
@@ -211,7 +210,7 @@ Common fields:
     11.18. Assessment type
     11.19. Training start date
     11.20. Type of initiative
-    11.21. Type of training
+    11.21. Type of training record
     11.22. Typology of training
     11.23. Website link
     11.24. Learning activity

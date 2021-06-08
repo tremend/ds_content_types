@@ -35,6 +35,8 @@ dependencies:
     - text
     - typed_link
     - yearonly
+_core:
+  default_config_hash: 3TELsYyULCAq8JtgGj78uJ-DU2CKu1LoV5HuI0lO_zU
 id: node.dsj_training_offer.default
 targetEntityType: node
 bundle: dsj_training_offer
@@ -57,7 +59,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_dsj_assessment_type:
-    weight: 15
+    weight: 16
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -71,31 +73,31 @@ content:
     type: string_textfield
     region: content
   field_dsj_credential_offered:
-    weight: 23
+    weight: 24
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_digital_skill_level:
-    weight: 7
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_digital_technology:
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_effort:
-    weight: 22
+    weight: 23
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_geographic_scope:
-    weight: 8
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -109,33 +111,33 @@ content:
     type: image_image
     region: content
   field_dsj_industry:
-    weight: 9
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_is_certificate_free:
-    weight: 19
+    weight: 20
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_dsj_is_course_free:
-    weight: 18
+    weight: 19
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_dsj_learning_activity:
-    weight: 14
+    weight: 15
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_organization:
-    weight: 17
+    weight: 18
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -144,27 +146,34 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_dsj_publish_in_core:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_dsj_self_paced_course:
-    weight: 24
+    weight: 25
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_dsj_target_audience:
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_target_group:
-    weight: 12
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_target_language:
-    weight: 10
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -180,31 +189,31 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_dsj_training_duration:
-    weight: 16
+    weight: 17
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_training_start_date:
-    weight: 21
+    weight: 22
     settings: {  }
     third_party_settings: {  }
     type: yearonly_default
     region: content
   field_dsj_type_of_initiative:
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_type_of_training:
-    weight: 20
+    weight: 21
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dsj_typology_of_training:
-    weight: 13
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -266,12 +275,5 @@ content:
       placeholder: ''
       match_limit: 10
     region: content
-    third_party_settings: {  }
-  field_dsj_publish_in_core:
-    type: boolean_checkbox
-    weight: 25
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
 hidden: {  }
